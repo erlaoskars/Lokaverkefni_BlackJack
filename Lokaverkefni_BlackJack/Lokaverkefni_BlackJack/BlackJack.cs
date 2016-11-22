@@ -25,7 +25,7 @@ namespace Lokaverkefni_BlackJack
             " Notandinn getur veðjað pening, ef notandinn vinnur þá fær hann tvöfalt sem hann lagði út en ef hann tapar missir hann peninginn." +
             "\n\nHit: Dragðu annað kort frá búnka og taka áhættuna á því að fara yfir 21." +
             "\n\nSignal: Ekki draga annað spil og taka áhættuna að talvan dregur lægri summu eða fer yfir 21." +
-             "Þetta virkar, Þetta virkar Hrafnkell");
+             "Þetta virkar, Þetta virkar Hrafnkell inn");
 
         }
 
