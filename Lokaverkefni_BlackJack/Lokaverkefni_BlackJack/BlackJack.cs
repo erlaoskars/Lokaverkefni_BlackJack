@@ -16,7 +16,6 @@ namespace Lokaverkefni_BlackJack
         {
             InitializeComponent();
         }
-
         Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
 
         private void mInstructionsIS_Click(object sender, EventArgs e)
@@ -25,7 +24,9 @@ namespace Lokaverkefni_BlackJack
             " Notandinn getur skráð sig inn og sem vistar svo breytingar, notandinn byrjar með 100$ en ef hann fer undir 0$ fær hann aftur 100$." +
             " Notandinn getur veðjað pening, ef notandinn vinnur þá fær hann tvöfalt sem hann lagði út en ef hann tapar missir hann peninginn." +
             "\n\nHit: Dragðu annað kort frá búnka og taka áhættuna á því að fara yfir 21." +
-            "\n\nSignal: Ekki draga annað spil og taka áhættuna að talvan dregur lægri summu eða fer yfir 21.");
+            "\n\nSignal: Ekki draga annað spil og taka áhættuna að talvan dregur lægri summu eða fer yfir 21." +
+             "Þetta virkar, Þetta virkar Hrafnkell");
+
         }
 
         private void mLogOut_Click(object sender, EventArgs e)
@@ -66,6 +67,7 @@ namespace Lokaverkefni_BlackJack
             "El usuario puede apostar dinero, si el usuario gana, se pone el doble expuso, pero si pierde, pierde dinero." +
             "\n\n hit: Dibuje otra carta del mazo y tomar el riesgo de pasarse de 21." +
             "\n\n e señal en: No dibujar otra tarjeta y correr el riesgo de que el equipo reduce suma inferior o superior a 21.");
+
         }
     }
 }
