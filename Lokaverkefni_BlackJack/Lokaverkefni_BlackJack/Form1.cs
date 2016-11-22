@@ -94,6 +94,27 @@ namespace Lokaverkefni_BlackJack
         {
             string nafn = tbNotendanafn.Text;
             string lykilord = tbLykilord.Text;
+            string passw = null;
+
+            try
+            {
+                passw = gagnagrunnur.FinnaLykilord(nafn);
+
+                if (passw == lykilord)
+                {
+                    BlackJack blackjack = new BlackJack();
+                    blackjack.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Rangt lykilorð");
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         
