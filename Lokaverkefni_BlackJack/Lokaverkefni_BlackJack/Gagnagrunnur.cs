@@ -67,28 +67,5 @@ namespace Lokaverkefni_BlackJack
                 CloseConnection();
             }
         }
-
-        public string FinnaLykilord(string nafn)
-        {
-            string passw = null;
-            if (OpenConnection() == true)
-            {
-                fyrirspurn = "SELECT password FROM notendur WHERE username = '" + nafn + "';";
-                mySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
-                sqllesari = mySQLskipun.ExecuteReader();
-                while (sqllesari.Read())
-                {
-                    for (int i = 0; i < sqllesari.FieldCount; i++)
-                    {
-                        passw += (sqllesari.GetValue(i).ToString());
-                    }
-                }
-
-                CloseConnection();
-                return passw;
-            }
-            return passw;
-        }
-
     }
 }
