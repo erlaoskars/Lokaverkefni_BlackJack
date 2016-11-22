@@ -15,7 +15,6 @@ namespace Lokaverkefni_BlackJack
 {
     public partial class fLokaverkefni : Form
     {
-        BlackJack blackjack = new BlackJack();
         Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
         Random random = new Random();
 
@@ -38,7 +37,7 @@ namespace Lokaverkefni_BlackJack
         private void fLokaverkefni_Load(object sender, EventArgs e)
         {
             icon = random.Next(1, 5);
-            
+
             if (icon == 1)
             {
                 tbLykilord.PasswordChar = '♠';
@@ -95,6 +94,26 @@ namespace Lokaverkefni_BlackJack
         {
             string nafn = tbNotendanafn.Text;
             string lykilord = tbLykilord.Text;
+            string passw = null;
+
+            try
+            {
+                passw = gagnagrunnur.FinnaLykilord(nafn);
+
+                if (passw == lykilord)
+                {
+                    BlackJack blackjack = new BlackJack();
+                    blackjack.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Rangt lykilorð eða notendanafn");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         
