@@ -59,7 +59,7 @@
             this.instructionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(342, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(340, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,21 +78,18 @@
             this.mAuthors.Name = "mAuthors";
             this.mAuthors.Size = new System.Drawing.Size(151, 22);
             this.mAuthors.Text = "Authors";
-            this.mAuthors.Click += new System.EventHandler(this.mAuthors_Click);
             // 
             // mLogOut
             // 
             this.mLogOut.Name = "mLogOut";
             this.mLogOut.Size = new System.Drawing.Size(151, 22);
             this.mLogOut.Text = "Log out";
-            this.mLogOut.Click += new System.EventHandler(this.mLogOut_Click);
             // 
             // mExit
             // 
             this.mExit.Name = "mExit";
             this.mExit.Size = new System.Drawing.Size(151, 22);
             this.mExit.Text = "Exit to desktop";
-            this.mExit.Click += new System.EventHandler(this.mExit_Click);
             // 
             // instructionsToolStripMenuItem
             // 
@@ -116,14 +113,12 @@
             this.mInstructionsENG.Name = "mInstructionsENG";
             this.mInstructionsENG.Size = new System.Drawing.Size(162, 22);
             this.mInstructionsENG.Text = "Instructions ENG";
-            this.mInstructionsENG.Click += new System.EventHandler(this.mInstructionsENG_Click);
             // 
             // mInstructionsES
             // 
             this.mInstructionsES.Name = "mInstructionsES";
             this.mInstructionsES.Size = new System.Drawing.Size(162, 22);
             this.mInstructionsES.Text = "Instructions ES";
-            this.mInstructionsES.Click += new System.EventHandler(this.mInstructionsES_Click);
             // 
             // button1
             // 
@@ -147,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 456);
+            this.ClientSize = new System.Drawing.Size(340, 456);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pbSpil);
@@ -155,7 +150,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "BlackJack";
             this.Text = "BlackJack";
-            this.Load += new System.EventHandler(this.BlackJack_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbSpil)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
