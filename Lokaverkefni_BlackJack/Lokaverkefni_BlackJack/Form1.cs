@@ -58,6 +58,7 @@ namespace Lokaverkefni_BlackJack
             tbLykilord.MaxLength = 15;
         }
 
+        /*Skrá nýjan notenda inn*/
         private void btnNyskra_Click(object sender, EventArgs e)
         {
             string nafn = tbNotendanafn.Text;
