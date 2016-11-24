@@ -15,32 +15,40 @@ namespace Lokaverkefni_BlackJack
 {
     public partial class fLokaverkefni : Form
     {
+        //Klasinn gagnagrunnur opnaður til þess að sækja aðferðir til að tengjast við Töflur í gagnagrunni
         Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
+
+        //Búið til random til þess að hægt sé að fá random tölu
         Random random = new Random();
 
+        //int breyta
         int icon = 0;
 
         public fLokaverkefni()
         {
             InitializeComponent();
 
+            //Hér er reynt að tengjast við gagnagrunnin sjálfan, sett í try/catch svo hægt sé að grípa villu ef hún kemur upp án þess að forritið krassar
             try
             {
                 gagnagrunnur.TengingVidGagnagrunn();
             }
             catch (Exception ex)
             {
+                //MessageBox kemur upp ef upp kemur villa
                 MessageBox.Show(ex.ToString());
             }
         }
 
         private void fLokaverkefni_Load(object sender, EventArgs e)
         {
+            //Hér er sett random tölu í breytuna icon 
             icon = random.Next(1, 5);
 
+
+            //Hérna er síðan notað if eftir því hvaða tala kom upp í icon
             if (icon == 1)
             {
-                
                 tbLykilord.PasswordChar = '♠';
             }
             if (icon == 2)
@@ -56,10 +64,13 @@ namespace Lokaverkefni_BlackJack
                 tbLykilord.PasswordChar = '♣';
             }
         
+            //Hér er sagt að lykilorðið megi ekki vera lengra en 15 stafir í heild
             tbLykilord.MaxLength = 15;
         }
+
         private void btnNyskra_Click(object sender, EventArgs e)
         {
+            //String breytur búnar til, ToLower er notað til að setja alla stafi í lágstafi
             string nafn = tbNotendanafn.Text.ToLower();
             string lykilord = tbLykilord.Text;
 
@@ -67,7 +78,6 @@ namespace Lokaverkefni_BlackJack
             if (nafn == "" && lykilord == "")
             {
                 MessageBox.Show("Vantar notendanafn og lykilorð");
-                
             }
             else if (lykilord == "")
             {

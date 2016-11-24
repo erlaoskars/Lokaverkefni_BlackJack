@@ -12,6 +12,13 @@ namespace Lokaverkefni_BlackJack
 {
     public partial class BlackJack : Form
     {
+        int stig = 0;
+        int spil = 0; //Fundið gildispil og hefur gildi spil einnig.
+        int tigulspadilaufas = 0; //Fundið Tegund spils
+        string stafurspils = "";
+        string validspil = "";
+        string gildispils = "";
+
         public BlackJack(string notendanafn)
         {
             InitializeComponent();
@@ -42,11 +49,6 @@ namespace Lokaverkefni_BlackJack
             Application.Exit();
         }
 
-        private void BlackJack_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void mInstructionsENG_Click(object sender, EventArgs e)
         {
             MessageBox.Show("In blackjack, the aim is to sum portrayed play is 21 or less. If a card sum is higher then explodes and the user will lose. "+
@@ -68,6 +70,9 @@ namespace Lokaverkefni_BlackJack
         private void mLogOut_Click(object sender, EventArgs e)
         {
             this.Hide();
+
+            fLokaverkefni form = new fLokaverkefni();
+            form.Show();
         }
 
         private void mExit_Click(object sender, EventArgs e)
@@ -79,45 +84,68 @@ namespace Lokaverkefni_BlackJack
         {
             MessageBox.Show("Höfundar: Erla Óskarsdóttir og Hrafnkel þorri Þrastarson.");
         }
+
         private void BtnHit_Click(object sender, EventArgs e)
         {
-            List<string> búinspil = new List<string>();
-            int spil = 0; //Fundið gildispil og hefur gildi spil einnig.
-            int tigulspaðilaufas = 0; //Fundið Tegund spils
-            string stafurspils = "";
-            string valiðspil = "";
-            string gildispils = "";
+            List<string> buinspil = new List<string>();
+            
             spil = rnd.Next(1, 14);
-            tigulspaðilaufas = rnd.Next(1, 5);
+            tigulspadilaufas = rnd.Next(1, 5);
 
-            if(tigulspaðilaufas == 1)
+            if(tigulspadilaufas == 1)
             {
                 stafurspils = "A";
             }
-            if (tigulspaðilaufas == 2)
+            if (tigulspadilaufas == 2)
             {
                 stafurspils = "B";
             }
-            if (tigulspaðilaufas == 3)
+            if (tigulspadilaufas == 3)
             {
                 stafurspils = "C";
             }
-            if (tigulspaðilaufas == 4)
+            if (tigulspadilaufas == 4)
             {
                 stafurspils = "D";
             }
 
+            stig = stig + spil;
+
+            lblStig.Text = stig.ToString();
+
+            if (stig == 21)
+            {
+                MessageBox.Show("Winner");
+            }
+            if (stig > 21)
+            {
+                MessageBox.Show("Busted");
+            }
+
             gildispils = spil.ToString();
-            valiðspil = (gildispils + stafurspils).ToString();
-            if(búinspil.Contains(valiðspil))
+            validspil = (gildispils + stafurspils).ToString();
+
+            if(buinspil.Contains(validspil))
             {
                 return;
             }
             else
             {
-            búinspil.Add(valiðspil);
-            pbSpil.Image = (Image)Properties.Resources.ResourceManager.GetObject(valiðspil);
+                buinspil.Add(validspil);
+                pbSpil.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
             }
+        }
+
+        private void btnNewGame_Click(object sender, EventArgs e)
+        {
+            stig = 0;
+            spil = 0;
+            tigulspadilaufas = 0; 
+            stafurspils = "";
+            validspil = "";
+            gildispils = "";
+
+            lblStig.Text = "";
         }
     }
 }

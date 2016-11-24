@@ -44,6 +44,9 @@
             this.BtnHit = new System.Windows.Forms.Button();
             this.labelspil = new System.Windows.Forms.Label();
             this.pbSpil = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblStig = new System.Windows.Forms.Label();
+            this.btnNewGame = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSpil)).BeginInit();
             this.SuspendLayout();
@@ -123,7 +126,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(177, 407);
+            this.button2.Location = new System.Drawing.Point(171, 438);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(143, 37);
             this.button2.TabIndex = 3;
@@ -160,7 +163,7 @@
             // 
             // BtnHit
             // 
-            this.BtnHit.Location = new System.Drawing.Point(28, 407);
+            this.BtnHit.Location = new System.Drawing.Point(22, 438);
             this.BtnHit.Name = "BtnHit";
             this.BtnHit.Size = new System.Drawing.Size(143, 37);
             this.BtnHit.TabIndex = 7;
@@ -186,11 +189,41 @@
             this.pbSpil.TabIndex = 0;
             this.pbSpil.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(31, 392);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Stig:";
+            // 
+            // lblStig
+            // 
+            this.lblStig.BackColor = System.Drawing.Color.White;
+            this.lblStig.Location = new System.Drawing.Point(69, 392);
+            this.lblStig.Name = "lblStig";
+            this.lblStig.Size = new System.Drawing.Size(55, 24);
+            this.lblStig.TabIndex = 10;
+            // 
+            // btnNewGame
+            // 
+            this.btnNewGame.Location = new System.Drawing.Point(171, 488);
+            this.btnNewGame.Name = "btnNewGame";
+            this.btnNewGame.Size = new System.Drawing.Size(143, 37);
+            this.btnNewGame.TabIndex = 11;
+            this.btnNewGame.Text = "New Game";
+            this.btnNewGame.UseVisualStyleBackColor = true;
+            this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
+            // 
             // BlackJack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(378, 473);
+            this.ClientSize = new System.Drawing.Size(378, 537);
+            this.Controls.Add(this.btnNewGame);
+            this.Controls.Add(this.lblStig);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.labelspil);
             this.Controls.Add(this.BtnHit);
             this.Controls.Add(this.lblMoney);
@@ -228,5 +261,8 @@
         private System.Windows.Forms.Label lblMoney;
         private System.Windows.Forms.Button BtnHit;
         private System.Windows.Forms.Label labelspil;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblStig;
+        private System.Windows.Forms.Button btnNewGame;
     }
 }
