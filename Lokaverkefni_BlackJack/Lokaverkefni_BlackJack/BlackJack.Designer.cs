@@ -40,15 +40,18 @@
             this.mInstructionsES = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.lblNafn = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbSpil)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pbSpil
             // 
-            this.pbSpil.Location = new System.Drawing.Point(86, 84);
+            this.pbSpil.Image = global::Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+            this.pbSpil.Location = new System.Drawing.Point(66, 85);
             this.pbSpil.Name = "pbSpil";
-            this.pbSpil.Size = new System.Drawing.Size(170, 263);
+            this.pbSpil.Size = new System.Drawing.Size(189, 276);
+            this.pbSpil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSpil.TabIndex = 0;
             this.pbSpil.TabStop = false;
             // 
@@ -138,11 +141,21 @@
             this.button2.Text = "Signal";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // lblNafn
+            // 
+            this.lblNafn.AutoSize = true;
+            this.lblNafn.Location = new System.Drawing.Point(19, 45);
+            this.lblNafn.Name = "lblNafn";
+            this.lblNafn.Size = new System.Drawing.Size(35, 13);
+            this.lblNafn.TabIndex = 4;
+            this.lblNafn.Text = "label1";
+            // 
             // BlackJack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(340, 456);
+            this.Controls.Add(this.lblNafn);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pbSpil);
@@ -172,5 +185,6 @@
         private System.Windows.Forms.ToolStripMenuItem mInstructionsES;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblNafn;
     }
 }

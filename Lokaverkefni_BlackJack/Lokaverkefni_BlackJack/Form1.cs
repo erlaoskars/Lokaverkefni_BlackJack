@@ -58,10 +58,9 @@ namespace Lokaverkefni_BlackJack
             tbLykilord.MaxLength = 15;
         }
 
-        /*Skrá nýjan notenda inn*/
         private void btnNyskra_Click(object sender, EventArgs e)
         {
-            string nafn = tbNotendanafn.Text;
+            string nafn = tbNotendanafn.Text.ToLower();
             string lykilord = tbLykilord.Text;
 
 
@@ -103,7 +102,7 @@ namespace Lokaverkefni_BlackJack
 
                 if (passw == lykilord)
                 {
-                    BlackJack blackjack = new BlackJack();
+                    BlackJack blackjack = new BlackJack(nafn);
                     blackjack.Show();
                 }
                 else
