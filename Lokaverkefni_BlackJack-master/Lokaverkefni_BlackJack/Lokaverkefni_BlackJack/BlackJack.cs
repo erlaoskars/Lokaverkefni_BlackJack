@@ -116,10 +116,16 @@ namespace Lokaverkefni_BlackJack
             if (stig == 21)
             {
                 MessageBox.Show("Winner");
+                BtnHit.Hide();
+                btnSignal.Hide();
+                btnStart.Show();
             }
             if (stig > 21)
             {
                 MessageBox.Show("Busted");
+                BtnHit.Hide();
+                btnSignal.Hide();
+                btnStart.Show();
             }
 
             gildispils = spil.ToString();
@@ -138,14 +144,26 @@ namespace Lokaverkefni_BlackJack
 
         private void btnNewGame_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
             stig = 0;
             spil = 0;
-            tigulspadilaufas = 0; 
+            tigulspadilaufas = 0;
             stafurspils = "";
             validspil = "";
             gildispils = "";
 
             lblStig.Text = "";
+
+            BtnHit.Show();
+            btnSignal.Show();
+            btnStart.Hide();
+
+
         }
+
     }
 }
