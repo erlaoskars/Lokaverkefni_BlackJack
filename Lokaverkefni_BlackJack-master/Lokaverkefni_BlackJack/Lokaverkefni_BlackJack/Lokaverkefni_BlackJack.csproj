@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aðferðir.cs" />
+    <Compile Include="Adferdir.cs" />
     <Compile Include="BlackJack.cs">
       <SubType>Form</SubType>
     </Compile>

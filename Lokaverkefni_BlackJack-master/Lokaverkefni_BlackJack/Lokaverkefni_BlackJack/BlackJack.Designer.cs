@@ -46,16 +46,25 @@
             this.pbSpil = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblStig = new System.Windows.Forms.Label();
-            this.btnNewGame = new System.Windows.Forms.Button();
             this.rbtn50 = new System.Windows.Forms.RadioButton();
             this.rbtn100 = new System.Windows.Forms.RadioButton();
             this.rbtn500 = new System.Windows.Forms.RadioButton();
             this.rbtn1000 = new System.Windows.Forms.RadioButton();
             this.gbBet = new System.Windows.Forms.GroupBox();
             this.btnStart = new System.Windows.Forms.Button();
+            this.pbspil3 = new System.Windows.Forms.PictureBox();
+            this.pbspil4 = new System.Windows.Forms.PictureBox();
+            this.pbspil2 = new System.Windows.Forms.PictureBox();
+            this.pbspil5 = new System.Windows.Forms.PictureBox();
+            this.pbspil6 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSpil)).BeginInit();
             this.gbBet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbspil3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbspil4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbspil2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbspil5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbspil6)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -65,7 +74,7 @@
             this.instructionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(516, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(831, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -133,7 +142,7 @@
             // 
             // btnSignal
             // 
-            this.btnSignal.Location = new System.Drawing.Point(184, 435);
+            this.btnSignal.Location = new System.Drawing.Point(184, 451);
             this.btnSignal.Name = "btnSignal";
             this.btnSignal.Size = new System.Drawing.Size(130, 37);
             this.btnSignal.TabIndex = 3;
@@ -171,7 +180,7 @@
             // 
             // BtnHit
             // 
-            this.BtnHit.Location = new System.Drawing.Point(34, 435);
+            this.BtnHit.Location = new System.Drawing.Point(34, 451);
             this.BtnHit.Name = "BtnHit";
             this.BtnHit.Size = new System.Drawing.Size(130, 37);
             this.BtnHit.TabIndex = 7;
@@ -190,8 +199,7 @@
             // 
             // pbSpil
             // 
-            this.pbSpil.Image = global::Lokaverkefni_BlackJack.Properties.Resources._1A1;
-            this.pbSpil.Location = new System.Drawing.Point(82, 102);
+            this.pbSpil.Location = new System.Drawing.Point(34, 105);
             this.pbSpil.Name = "pbSpil";
             this.pbSpil.Size = new System.Drawing.Size(189, 276);
             this.pbSpil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -201,7 +209,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 392);
+            this.label2.Location = new System.Drawing.Point(31, 408);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 9;
@@ -210,21 +218,11 @@
             // lblStig
             // 
             this.lblStig.BackColor = System.Drawing.Color.White;
-            this.lblStig.Location = new System.Drawing.Point(69, 392);
+            this.lblStig.Location = new System.Drawing.Point(69, 402);
             this.lblStig.Name = "lblStig";
             this.lblStig.Size = new System.Drawing.Size(55, 24);
             this.lblStig.TabIndex = 10;
-            // 
-            // btnNewGame
-            // 
-            this.btnNewGame.Location = new System.Drawing.Point(184, 485);
-            this.btnNewGame.Name = "btnNewGame";
-            this.btnNewGame.Size = new System.Drawing.Size(130, 37);
-            this.btnNewGame.TabIndex = 11;
-            this.btnNewGame.Text = "New Game";
-            this.btnNewGame.UseVisualStyleBackColor = true;
-            this.btnNewGame.Visible = false;
-            this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
+            this.lblStig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rbtn50
             // 
@@ -277,7 +275,7 @@
             this.gbBet.Controls.Add(this.rbtn1000);
             this.gbBet.Controls.Add(this.rbtn50);
             this.gbBet.Controls.Add(this.rbtn100);
-            this.gbBet.Location = new System.Drawing.Point(358, 50);
+            this.gbBet.Location = new System.Drawing.Point(650, 51);
             this.gbBet.Name = "gbBet";
             this.gbBet.Size = new System.Drawing.Size(136, 125);
             this.gbBet.TabIndex = 17;
@@ -294,13 +292,60 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
+            // pbspil3
+            // 
+            this.pbspil3.Location = new System.Drawing.Point(124, 105);
+            this.pbspil3.Name = "pbspil3";
+            this.pbspil3.Size = new System.Drawing.Size(189, 276);
+            this.pbspil3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbspil3.TabIndex = 18;
+            this.pbspil3.TabStop = false;
+            // 
+            // pbspil4
+            // 
+            this.pbspil4.Location = new System.Drawing.Point(178, 105);
+            this.pbspil4.Name = "pbspil4";
+            this.pbspil4.Size = new System.Drawing.Size(189, 276);
+            this.pbspil4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbspil4.TabIndex = 19;
+            this.pbspil4.TabStop = false;
+            // 
+            // pbspil2
+            // 
+            this.pbspil2.Location = new System.Drawing.Point(83, 105);
+            this.pbspil2.Name = "pbspil2";
+            this.pbspil2.Size = new System.Drawing.Size(189, 276);
+            this.pbspil2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbspil2.TabIndex = 20;
+            this.pbspil2.TabStop = false;
+            // 
+            // pbspil5
+            // 
+            this.pbspil5.Location = new System.Drawing.Point(229, 105);
+            this.pbspil5.Name = "pbspil5";
+            this.pbspil5.Size = new System.Drawing.Size(189, 276);
+            this.pbspil5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbspil5.TabIndex = 21;
+            this.pbspil5.TabStop = false;
+            // 
+            // pbspil6
+            // 
+            this.pbspil6.Location = new System.Drawing.Point(278, 105);
+            this.pbspil6.Name = "pbspil6";
+            this.pbspil6.Size = new System.Drawing.Size(189, 276);
+            this.pbspil6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbspil6.TabIndex = 22;
+            this.pbspil6.TabStop = false;
+            // 
             // BlackJack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 537);
+            this.ClientSize = new System.Drawing.Size(831, 537);
+            this.Controls.Add(this.pbSpil);
+            this.Controls.Add(this.pbspil2);
+            this.Controls.Add(this.pbspil3);
             this.Controls.Add(this.gbBet);
-            this.Controls.Add(this.btnNewGame);
             this.Controls.Add(this.lblStig);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelspil);
@@ -309,16 +354,24 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblNafn);
             this.Controls.Add(this.btnSignal);
-            this.Controls.Add(this.pbSpil);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.pbspil4);
+            this.Controls.Add(this.pbspil5);
+            this.Controls.Add(this.pbspil6);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "BlackJack";
             this.Text = "BlackJack";
+            this.Load += new System.EventHandler(this.BlackJack_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSpil)).EndInit();
             this.gbBet.ResumeLayout(false);
             this.gbBet.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbspil3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbspil4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbspil2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbspil5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbspil6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,12 +397,16 @@
         private System.Windows.Forms.Label labelspil;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblStig;
-        private System.Windows.Forms.Button btnNewGame;
         private System.Windows.Forms.RadioButton rbtn50;
         private System.Windows.Forms.RadioButton rbtn100;
         private System.Windows.Forms.RadioButton rbtn500;
         private System.Windows.Forms.RadioButton rbtn1000;
         private System.Windows.Forms.GroupBox gbBet;
         private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.PictureBox pbspil3;
+        private System.Windows.Forms.PictureBox pbspil4;
+        private System.Windows.Forms.PictureBox pbspil2;
+        private System.Windows.Forms.PictureBox pbspil5;
+        private System.Windows.Forms.PictureBox pbspil6;
     }
 }
