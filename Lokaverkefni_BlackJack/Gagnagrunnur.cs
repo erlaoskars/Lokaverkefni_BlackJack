@@ -89,6 +89,7 @@ namespace Lokaverkefni_BlackJack
             }
             return passw;
         }
+
         public void SettInnMoney(string nafn, int money)
         {
             if (OpenConnection() == true)
@@ -122,6 +123,16 @@ namespace Lokaverkefni_BlackJack
             return money;
         }
 
+        public void ByrjaAftur(string nafn)
+        {
+            if (OpenConnection() == true)
+            {
+                fyrirspurn = "UPDATE notendur SET money = '" + 500 + "' WHERE username = '" + nafn + "';";
+                mySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
+                mySQLskipun.ExecuteNonQuery();
+                CloseConnection();
+            }
+        }
 
     }
 }

@@ -48,3 +48,14 @@ C:\Users\1610972769\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack
 C:\Users\1610972769\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.csproj.GenerateResource.Cache
 C:\Users\1610972769\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\Lokaverkefni_BlackJack\bin\Debug\Lokaverkefni_BlackJack.exe
 C:\Users\1610972769\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\Lokaverkefni_BlackJack\bin\Debug\Lokaverkefni_BlackJack.pdb
+C:\Users\0901972079\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\bin\Debug\Lokaverkefni_BlackJack.exe.config
+C:\Users\0901972079\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.exe
+C:\Users\0901972079\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.pdb
+C:\Users\0901972079\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\bin\Debug\Lokaverkefni_BlackJack.exe
+C:\Users\0901972079\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\bin\Debug\Lokaverkefni_BlackJack.pdb
+C:\Users\0901972079\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\0901972079\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.BlackJack.resources
+C:\Users\0901972079\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.fLokaverkefni.resources
+C:\Users\0901972079\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.Properties.Resources.resources
+C:\Users\0901972079\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.csproj.GenerateResource.Cache
+C:\Users\0901972079\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.HaldaAfram.resources

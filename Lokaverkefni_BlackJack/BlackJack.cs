@@ -161,7 +161,9 @@ namespace Lokaverkefni_BlackJack
                     pbspil6.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
                     pbspil6.BringToFront();
             }
+
             round++;
+
             if (stig == 21)
             {
                 MessageBox.Show("Winner");
@@ -184,48 +186,48 @@ namespace Lokaverkefni_BlackJack
             }
 
         }
-      
 
         private void btnStart_Click(object sender, EventArgs e)
         {
             bet = Convert.ToInt32(tbBet.Text);
+
             if (bet > money)
             {
                 MessageBox.Show("Þú átt ekki nægan pening");
             }
             else
             {
-            stig = 0;
-            stigtolvu = 0;
-            spil = 0;
-            tigulspadilaufas = 0;
-            stafurspils = "";
-            validspil = "";
-            gildispils = "";
-            lblStig.Text = "";
-            lblstigtolvu.Text = "";
-            BtnHit.Show();
-            btnSignal.Show();
-            btnStart.Hide();
+                stig = 0;
+                stigtolvu = 0;
+                spil = 0;
+                tigulspadilaufas = 0;
+                stafurspils = "";
+                validspil = "";
+                gildispils = "";
+                lblStig.Text = "";
+                lblstigtolvu.Text = "";
+                BtnHit.Show();
+                btnSignal.Show();
+                btnStart.Hide();
 
-            round = 1;
-            pbSpil.Image = null; pbspil2.Image = null; pbspil3.Image = null;
-            pbspil4.Image = null; pbspil5.Image = null; pbspil6.Image = null;
-            
+                round = 1;
+                pbSpil.Image = null; pbspil2.Image = null; pbspil3.Image = null;
+                pbspil4.Image = null; pbspil5.Image = null; pbspil6.Image = null;
             }
         }
-
-        
 
         private void BlackJack_Load(object sender, EventArgs e)
         {
             money = Convert.ToInt32(gagni.FinnaMoney(nafn));
             lblMoney.Text = money.ToString() + "$";
 
-        }
+            HaldaAfram haldaafram = new HaldaAfram(nafn);
 
-        private void tbBet_TextChanged(object sender, EventArgs e)
-        {
+            if (money == 0)
+            {
+                haldaafram.Show();
+            }
+
             money = Convert.ToInt32(gagni.FinnaMoney(nafn));
             lblMoney.Text = money.ToString() + "$";
         }
