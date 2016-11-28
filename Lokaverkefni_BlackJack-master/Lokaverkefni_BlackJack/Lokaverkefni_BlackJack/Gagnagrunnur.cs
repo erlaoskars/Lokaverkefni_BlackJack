@@ -61,7 +61,7 @@ namespace Lokaverkefni_BlackJack
         {
             if (OpenConnection() == true)
             {
-                fyrirspurn = "INSERT INTO notendur (username, password) VALUES ('" + nafn + "','" + lykilord + "')";
+                fyrirspurn = "INSERT INTO notendur (username, password, money) VALUES ('" + nafn + "','" + lykilord + "','" + 0 + "')";
                 mySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
                 mySQLskipun.ExecuteNonQuery();
                 CloseConnection();
@@ -89,6 +89,15 @@ namespace Lokaverkefni_BlackJack
             }
             return passw;
         }
-
+        public void SettInnBet(string nafn, int bet)
+        {
+            if (OpenConnection() == true)
+            {
+                fyrirspurn = "UPDATE notendur SET money = '" + bet + "' WHERE username = '" + nafn + "';";
+                mySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
+                mySQLskipun.ExecuteNonQuery();
+                CloseConnection();
+            }
+        }
     }
 }

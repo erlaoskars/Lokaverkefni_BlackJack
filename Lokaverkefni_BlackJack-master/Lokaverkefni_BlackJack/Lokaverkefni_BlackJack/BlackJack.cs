@@ -18,21 +18,41 @@ namespace Lokaverkefni_BlackJack
         string stafurspils = "";
         string validspil = "";
         string gildispils = "";
+        string nafn = "";
+
+        Gagnagrunnur gagni = new Gagnagrunnur();
+
 
         public BlackJack(string notendanafn)
         {
             InitializeComponent();
 
-            string nafn = notendanafn;
+            //Hér er reynt að tengjast við gagnagrunnin sjálfan, sett í try/catch svo hægt sé að grípa villu ef hún kemur upp án þess að forritið krassar
+            try
+            {
+                gagni.TengingVidGagnagrunn();
+            }
+            catch (Exception ex)
+            {
+                //MessageBox kemur upp ef upp kemur villa
+                MessageBox.Show(ex.ToString());
+            }
 
+            nafn = notendanafn;
             lblNafn.Text = nafn;
         }
 
-        
-        Aðferðir aðferðir = new Aðferðir();
+        Adferdir aðferðir = new Adferdir();
         Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
         Random rnd = new Random();
-        
+        int round = 1;
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+
+            Application.Exit();
+        }
 
         private void mInstructionsIS_Click(object sender, EventArgs e)
         {
@@ -42,13 +62,7 @@ namespace Lokaverkefni_BlackJack
             "\n\nHit: Dragðu annað kort frá búnka og taka áhættuna á því að fara yfir 21." +
             "\n\nSignal: Ekki draga annað spil og taka áhættuna að talvan dregur lægri summu eða fer yfir 21.");
         }
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            base.OnFormClosing(e);
-
-            Application.Exit();
-        }
-
+        
         private void mInstructionsENG_Click(object sender, EventArgs e)
         {
             MessageBox.Show("In blackjack, the aim is to sum portrayed play is 21 or less. If a card sum is higher then explodes and the user will lose. "+
@@ -110,8 +124,47 @@ namespace Lokaverkefni_BlackJack
             }
 
             stig = stig + spil;
-
             lblStig.Text = stig.ToString();
+            gildispils = spil.ToString();
+            validspil = (gildispils + stafurspils).ToString();
+
+            if(round == 1)
+            {
+                    buinspil.Add(validspil);
+                    pbSpil.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
+                    pbSpil.BringToFront();
+            }
+            else if (round == 2)
+            {
+                    buinspil.Add(validspil);
+                    pbspil2.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
+                    pbspil2.BringToFront();
+            }
+            else if (round == 3)
+            {
+                    buinspil.Add(validspil);
+                    pbspil3.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
+                    pbspil3.BringToFront();
+            }
+            else if (round == 4)
+            {
+                    buinspil.Add(validspil);
+                    pbspil4.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
+                    pbspil4.BringToFront();
+            }
+            else if (round == 5)
+            {
+                    buinspil.Add(validspil);
+                    pbspil5.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
+                    pbspil5.BringToFront();
+            }
+            else if (round == 6)
+            {
+                    buinspil.Add(validspil);
+                    pbspil6.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
+                    pbspil6.BringToFront();
+            }
+            round++;
 
             if (stig == 21)
             {
@@ -122,30 +175,14 @@ namespace Lokaverkefni_BlackJack
             }
             if (stig > 21)
             {
+
                 MessageBox.Show("Busted");
                 BtnHit.Hide();
                 btnSignal.Hide();
                 btnStart.Show();
             }
-
-            gildispils = spil.ToString();
-            validspil = (gildispils + stafurspils).ToString();
-
-            if(buinspil.Contains(validspil))
-            {
-                return;
-            }
-            else
-            {
-                buinspil.Add(validspil);
-                pbSpil.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
-            }
         }
-
-        private void btnNewGame_Click(object sender, EventArgs e)
-        {
-            
-        }
+      
 
         private void btnStart_Click(object sender, EventArgs e)
         {
@@ -155,14 +192,44 @@ namespace Lokaverkefni_BlackJack
             stafurspils = "";
             validspil = "";
             gildispils = "";
-
             lblStig.Text = "";
-
             BtnHit.Show();
             btnSignal.Show();
             btnStart.Hide();
 
+            round = 1;
+            pbSpil.Image = null; pbspil2.Image = null; pbspil3.Image = null;
+            pbspil4.Image = null; pbspil5.Image = null; pbspil6.Image = null;
 
+            int bet = 0;
+
+            if (rbtn50.Checked)
+            {
+                bet = 50;
+            }
+            if (rbtn100.Checked)
+            {
+                bet = 100;
+            }
+            if (rbtn500.Checked)
+            {
+                bet = 500;
+            }
+            if (rbtn50.Checked)
+            {
+                bet = 1000;
+            }
+            
+            gagni.SettInnBet(nafn, bet);
+        }
+
+        
+
+        private void BlackJack_Load(object sender, EventArgs e)
+        {
+            round = 1;
+            pbSpil.InitialImage = null; pbspil2.InitialImage = null; pbspil3.InitialImage = null;
+            pbspil4.InitialImage = null; pbspil5.InitialImage = null; pbspil6.InitialImage = null;
         }
 
     }
