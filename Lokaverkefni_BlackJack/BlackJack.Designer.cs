@@ -313,7 +313,6 @@
             this.tbBet.Name = "tbBet";
             this.tbBet.Size = new System.Drawing.Size(118, 20);
             this.tbBet.TabIndex = 18;
-            this.tbBet.TextChanged += new System.EventHandler(this.tbBet_TextChanged);
             // 
             // BlackJack
             // 
