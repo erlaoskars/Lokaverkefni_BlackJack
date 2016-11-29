@@ -68,6 +68,12 @@
     <Compile Include="HaldaAfram.Designer.cs">
       <DependentUpon>HaldaAfram.cs</DependentUpon>
     </Compile>
+    <Compile Include="Leikslok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leikslok.Designer.cs">
+      <DependentUpon>Leikslok.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BlackJack.resx">
@@ -78,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HaldaAfram.resx">
       <DependentUpon>HaldaAfram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leikslok.resx">
+      <DependentUpon>Leikslok.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
