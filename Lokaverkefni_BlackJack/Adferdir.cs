@@ -11,9 +11,7 @@ namespace Lokaverkefni_BlackJack
         public string randomstafur(string stafurspils)
         {
 
-            
             int stafur = 0;
-           
             Random rnd = new Random();
             stafur = rnd.Next(1, 5);
 

@@ -23,12 +23,18 @@ namespace Lokaverkefni_BlackJack
         int money = 0;
         int bet = 0;
 
+        //Breytur fyrir Lokaform
+        int lokastig = 0;
+        int lokastigTolvu = 0;
+        int peningur = 0;
+
         //Breytur fyrir A.I Andstæðing.
         int spiltolvu = 0;
         int stigtolvu = 0;
         string gildispilstolvu = "";
         string validspiltolvu = "";
         string stafurspiltolvu = "";
+        bool win = false;
 
         Gagnagrunnur gagni = new Gagnagrunnur();
         Adferdir adferd = new Adferdir();
@@ -100,95 +106,13 @@ namespace Lokaverkefni_BlackJack
 
         private void mAuthors_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Höfundar: Erla Óskarsdóttir og Hrafnkel þorri Þrastarson.");
-        }
-
-        private void BtnHit_Click(object sender, EventArgs e)
-        {
-            List<string> buinspil = new List<string>();
-            
-            spil = rnd.Next(1, 14);
-            spiltolvu = rnd.Next(1, 14);
-            tigulspadilaufas = rnd.Next(1, 5);
-
-
-            stafurspils = adferd.randomstafur(stafurspils); //Aðferðir til að ákveða hvort spilið sé Ás, Spaði, Lauf eða Tígull
-            stafurspiltolvu = adferd.randomstafur(stafurspiltolvu);
-
-            stig = stig + spil; //Stigin útreiknað 
-            stigtolvu = stigtolvu + spiltolvu; //stigin útreiknuð fyrir tolvu
-
-            lblStig.Text = stig.ToString(); // Label fyrir notanda
-            lblstigtolvu.Text = stigtolvu.ToString(); // test label
-            gildispils = spil.ToString(); 
-            validspil = (gildispils + stafurspils).ToString(); //sett saman Value og staf svo hægt sé að birta mynd
-            validspiltolvu = (gildispilstolvu + stafurspiltolvu).ToString(); 
-
-
-            if (round == 1)
-            {
-                    buinspil.Add(validspil);
-                    pbSpil.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
-                    pbSpil.BringToFront();
-            }
-            if (round == 2)
-            {
-                    buinspil.Add(validspil);
-                    pbspil2.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
-                    pbspil2.BringToFront();
-            }
-            if (round == 3)
-            {
-                    buinspil.Add(validspil);
-                    pbspil3.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
-                    pbspil3.BringToFront();
-            }
-            if (round == 4)
-            {
-                    buinspil.Add(validspil);
-                    pbspil4.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
-                    pbspil4.BringToFront();
-            }
-            if (round == 5)
-            {
-                    buinspil.Add(validspil);
-                    pbspil5.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
-                    pbspil5.BringToFront();
-            }
-            if (round == 6)
-            {
-                    buinspil.Add(validspil);
-                    pbspil6.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
-                    pbspil6.BringToFront();
-            }
-
-            round++;
-
-            if (stig == 21)
-            {
-                MessageBox.Show("Winner");
-                BtnHit.Hide();
-                btnSignal.Hide();
-                btnStart.Show();
-                money = money + (bet * 2);
-                gagni.SettInnMoney(nafn, money);
-                lblMoney.Text = money.ToString() + "$";
-            }
-            if (stig > 21)
-            {
-                MessageBox.Show("Busted");
-                BtnHit.Hide();
-                btnSignal.Hide();
-                btnStart.Show();
-                money = money - bet;
-                gagni.SettInnMoney(nafn, money);
-                lblMoney.Text = money.ToString() + "$";
-            }
-
+            MessageBox.Show("Höfundar: Erla Óskarsdóttir og Hrafnkell Þorri Þrastarson.");
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            btnSignal.Show();
+            btnHit.Show();
             bet = Convert.ToInt32(tbBet.Text);
 
             if (bet > money)
@@ -206,7 +130,7 @@ namespace Lokaverkefni_BlackJack
                 gildispils = "";
                 lblStig.Text = "";
                 lblstigtolvu.Text = "";
-                BtnHit.Show();
+                btnHit.Show();
                 btnSignal.Show();
                 btnStart.Hide();
 
@@ -218,6 +142,7 @@ namespace Lokaverkefni_BlackJack
 
         private void BlackJack_Load(object sender, EventArgs e)
         {
+
             money = Convert.ToInt32(gagni.FinnaMoney(nafn));
             lblMoney.Text = money.ToString() + "$";
 
@@ -231,5 +156,127 @@ namespace Lokaverkefni_BlackJack
             money = Convert.ToInt32(gagni.FinnaMoney(nafn));
             lblMoney.Text = money.ToString() + "$";
         }
+
+        private void btnSignal_Click(object sender, EventArgs e)
+        {
+            lokastig = stig;
+            lokastigTolvu = stigtolvu;
+            peningur = bet;
+
+            Leikslok leikslok = new Leikslok(lokastig,lokastigTolvu,peningur);
+            leikslok.Show();
+        }
+
+        private void btnHit_Click(object sender, EventArgs e)
+        {
+            spil = rnd.Next(1, 14);
+            tigulspadilaufas = rnd.Next(1, 5);
+            stafurspils = adferd.randomstafur(stafurspils); //Aðferðir til að ákveða hvort spilið sé Ás, Spaði, Lauf eða Tígull
+            stig = stig + spil; //Stigin útreiknað 
+            lblStig.Text = stig.ToString(); // Label fyrir notanda
+            gildispils = spil.ToString();
+            validspil = (gildispils + stafurspils).ToString(); //sett saman Value og staf svo hægt sé að birta 
+
+            if (spiltolvu > 14 && round >= 1 && win == false)
+            {
+                
+            }
+            else
+            {
+                spiltolvu = rnd.Next(1, 14);
+                tigulspadilaufas = rnd.Next(1, 5);
+                stafurspiltolvu = adferd.randomstafur(stafurspiltolvu);
+                stigtolvu = stigtolvu + spiltolvu; //stigin útreiknuð fyrir tolvu
+                lblstigtolvu.Text = stigtolvu.ToString(); // test label
+                gildispils = spil.ToString();
+                validspiltolvu = (gildispilstolvu + stafurspiltolvu).ToString();
+            }
+            if (round == 1)
+            {
+                pbSpil.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
+                pbSpil.BringToFront();
+            }
+            if (round == 2)
+            {
+                pbspil2.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
+                pbspil2.BringToFront();
+            }
+            if (round == 3)
+            {
+                pbspil3.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
+                pbspil3.BringToFront();
+            }
+            if (round == 4)
+            {
+                pbspil4.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
+                pbspil4.BringToFront();
+            }
+            if (round == 5)
+            {
+                pbspil5.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
+                pbspil5.BringToFront();
+            }
+            if (round == 6)
+            {
+                pbspil6.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
+                pbspil6.BringToFront();
+            }
+
+            round++;
+
+            if (stigtolvu > 21 && stig > 21)
+            {
+                MessageBox.Show("You Both Busted!");
+                btnHit.Hide();
+                btnSignal.Hide();
+                btnStart.Show();
+                money = money + bet;
+                gagni.SettInnMoney(nafn, money);
+                lblMoney.Text = money.ToString() + "$";
+                lokastig = stig;
+                lokastigTolvu = stigtolvu;
+                peningur = bet;
+
+                Leikslok leikslok = new Leikslok(lokastig, lokastigTolvu, peningur);
+                leikslok.Show();
+            }
+            else if (stig > 21)
+            {
+                MessageBox.Show("Busted");
+                btnHit.Hide();
+                btnSignal.Hide();
+                btnStart.Show();
+                money = money - bet;
+                gagni.SettInnMoney(nafn, money);
+                lblMoney.Text = money.ToString() + "$";
+                lokastig = stig;
+                lokastigTolvu = stigtolvu;
+                peningur = bet;
+                win = true;
+
+                Leikslok leikslok = new Leikslok(lokastig, lokastigTolvu, peningur);
+                leikslok.Show();
+            }
+
+            else if (stigtolvu > 21)
+            {
+                MessageBox.Show("CPU Busted");
+                btnHit.Hide();
+                btnSignal.Hide();
+                btnStart.Show();
+                money = money + (bet * 2);
+                gagni.SettInnMoney(nafn, money);
+                lblMoney.Text = money.ToString() + "$";
+                lokastig = stig;
+                lokastigTolvu = stigtolvu;
+                peningur = bet;
+                win = false;
+                                           
+                Leikslok leikslok = new Leikslok(lokastig, lokastigTolvu, peningur);
+                leikslok.Show();
+            }
+           
+        }
+
     }
 }
