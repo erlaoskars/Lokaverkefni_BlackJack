@@ -111,48 +111,51 @@ namespace Lokaverkefni_BlackJack
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            btnSignal.Show();
-            btnHit.Show();
-            bet = Convert.ToInt32(tbBet.Text);
+            money = Convert.ToInt32(gagni.FinnaMoney(nafn));
+            lblMoney.Text = money.ToString() + "$";
 
-            if (bet > money)
+            if (tbBet.Text == "")
             {
-                MessageBox.Show("Þú átt ekki nægan pening");
+                MessageBox.Show("Þarft að setja inn bet");
             }
             else
             {
-                stig = 0;
-                stigtolvu = 0;
-                spil = 0;
-                tigulspadilaufas = 0;
-                stafurspils = "";
-                validspil = "";
-                gildispils = "";
-                lblStig.Text = "";
-                lblstigtolvu.Text = "";
-                btnHit.Show();
-                btnSignal.Show();
-                btnStart.Hide();
+                bet = Convert.ToInt32(tbBet.Text);
+                HaldaAfram haldaafram = new HaldaAfram(nafn);
 
-                round = 1;
-                pbSpil.Image = null; pbspil2.Image = null; pbspil3.Image = null;
-                pbspil4.Image = null; pbspil5.Image = null; pbspil6.Image = null;
+                if (money == 0)
+                {
+                    haldaafram.Show();
+
+                }
+                else if (bet > money)
+                {
+                    MessageBox.Show("Þú átt ekki nægan pening");
+                }
+                else
+                {
+                    stig = 0;
+                    stigtolvu = 0;
+                    spil = 0;
+                    tigulspadilaufas = 0;
+                    stafurspils = "";
+                    validspil = "";
+                    gildispils = "";
+                    lblStig.Text = "";
+                    lblstigtolvu.Text = "";
+                    btnHit.Show();
+                    btnSignal.Show();
+                    btnStart.Hide();
+
+                    round = 1;
+                    pbSpil.Image = null; pbspil2.Image = null; pbspil3.Image = null;
+                    pbspil4.Image = null; pbspil5.Image = null; pbspil6.Image = null;
+                }
             }
         }
 
         private void BlackJack_Load(object sender, EventArgs e)
         {
-
-            money = Convert.ToInt32(gagni.FinnaMoney(nafn));
-            lblMoney.Text = money.ToString() + "$";
-
-            HaldaAfram haldaafram = new HaldaAfram(nafn);
-
-            if (money == 0)
-            {
-                haldaafram.Show();
-            }
-
             money = Convert.ToInt32(gagni.FinnaMoney(nafn));
             lblMoney.Text = money.ToString() + "$";
         }
