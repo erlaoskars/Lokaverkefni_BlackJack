@@ -40,7 +40,7 @@ namespace Lokaverkefni_BlackJack
         {
             lblPlayerpoints.Text = stigP1.ToString();
             lblCpupoints.Text = stigT1.ToString();
-            lblMoneygol.Text = tapedawin.ToString();
+            lblMoneygol.Text = tapedawin.ToString() + "$";
 
         }
     }

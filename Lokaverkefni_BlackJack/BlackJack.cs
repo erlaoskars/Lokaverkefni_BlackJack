@@ -32,6 +32,7 @@ namespace Lokaverkefni_BlackJack
 
         //Breytur fyrir A.I Andstæðing.
         int spiltolvu = 0;
+        int rndakvordun = 0;
         int stigtolvu = 0;
         int roundtolvu = 0;
         string gildispilstolvu = "";
@@ -166,12 +167,12 @@ namespace Lokaverkefni_BlackJack
         {
             lokastig = stig;
             lokastigTolvu = stigtolvu;
-            spiltolvu = rnd.Next(1, 101);
-            if (stigtolvu > 17 || stigtolvu == 21 || stigtolvu < 99) //A.I Tekur ákvörðun hvort hún ætti að "hitta" einsusinni en
+            rndakvordun = rnd.Next(1, 101);
+            if (stigtolvu > 17) //A.I Tekur ákvörðun hvort hún ætti að "hitta" einsusinni en
             {
 
             }
-            else if (stigtolvu < 17 || spiltolvu < 13)
+            else if (stigtolvu < 17)
             {
                 spiltolvu = rnd.Next(1, 14);
                 tigulspadilaufas = rnd.Next(1, 5);
@@ -210,20 +211,12 @@ namespace Lokaverkefni_BlackJack
                 {
                     peningur = bet * 2;
                 }
-                else if(lokastig < lokastigTolvu)
+                else if (lokastig < lokastigTolvu)
                 {
                     peningur = -bet;
                 }
-                else if(stigtolvu == stig)
+                else if (stigtolvu == stig)
                 {
-                    btnHit.Hide();
-                    btnSignal.Hide();
-                    btnStart.Show();
-                    money = money + bet;
-                    gagni.SettInnMoney(nafn, money);
-                    lblMoney.Text = money.ToString() + "$";
-                    lokastig = stig;
-                    lokastigTolvu = stigtolvu;
                     peningur = bet;
                 }
             }
@@ -232,9 +225,7 @@ namespace Lokaverkefni_BlackJack
                 btnSignal.Hide();
                 btnStart.Show();
 
-
-              
-
+                lokastigTolvu = lokastigTolvu + spiltolvu;
                 Leikslok leikslok = new Leikslok(lokastig, lokastigTolvu, peningur);
                 leikslok.Show();
        
@@ -250,13 +241,9 @@ namespace Lokaverkefni_BlackJack
             gildispils = spil.ToString();
             validspil = (gildispils + stafurspils).ToString(); //sett saman Value og staf svo hægt sé að birta 
 
-            if (stigtolvu > 15 && round >= 1 && win == false)
+            if (stigtolvu > 15)
             {
                 
-            }
-            if (stigtolvu > 19)
-            {
-
             }
             else
             {
