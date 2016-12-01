@@ -70,11 +70,12 @@ namespace Lokaverkefni_BlackJack
 
         private void btnNyskra_Click(object sender, EventArgs e)
         {
-            //String breytur búnar til, ToLower er notað til að setja alla stafi í lágstafi
+            //String breytur búnar til, tekið er úr texboxi og sett í breytu, ToLower er notað til að setja alla stafi í lágstafi
             string nafn = tbNotendanafn.Text.ToLower();
             string lykilord = tbLykilord.Text;
 
-
+            //Hér er athugað hvort að vanti nokkuð í textaboxin, notað er if/else til þess
+            //MessageBox kemur upp ef að vantar lykilorð, notendanafn eða bæði
             if (nafn == "" && lykilord == "")
             {
                 MessageBox.Show("Vantar notendanafn og lykilorð");
@@ -87,16 +88,22 @@ namespace Lokaverkefni_BlackJack
             {
                 MessageBox.Show("Vantar notendanafn");
             }
+            //Ef ekkert vantar þá förum við inn í else
             else
             {
+                //Hér er notað try/catch til að grípa villu
                 try
                 {
+                    //Hérna er sótt aðferð í klasanum Gagnagrunnur, aðferðin setur nafnið og lykilorðið í sql töflu
                     gagnagrunnur.SettInnSqlToflu(nafn, lykilord);
+                    //Ef allt fór vel kemur upp messagebox sem segir til um það
                     MessageBox.Show("Þetta tókst");
                 }
-                catch (Exception)
+                catch (Exception) //ef upp kemur villa
                 {
+                    //Hérna er sótt aðferð í gagnagrunn, þessi aðferð lokar fyrir tengingu við gagnagrunn svo notandi geti reynt aftur
                     gagnagrunnur.CloseConnection();
+                    //MeassageBox segir afh upp koma villa
                     MessageBox.Show("Notendanafn þegar í notkun");
                 }
             }
@@ -104,31 +111,40 @@ namespace Lokaverkefni_BlackJack
 
         private void btnSkraInn_Click(object sender, EventArgs e)
         {
+            //string breytur búnar til, sett er í þær texta úr textaboxum
             string nafn = tbNotendanafn.Text;
             string lykilord = tbLykilord.Text;
             string passw = null;
 
+            //try/catch notað hér
             try
             {
+                //Fundið er út lykilorð notanda sem er að reyna skrá sig inn
                 passw = gagnagrunnur.FinnaLykilord(nafn);
 
+                //Notað er if til að finna út hvort notandi skrifaði rétt lykilorð
                 if (passw == lykilord)
                 {
+                    //Ef lykilorðið er rétt opnast formið BlackJack
                     BlackJack blackjack = new BlackJack(nafn);
                     blackjack.Show();
+                    //Login formið hverfur
                     this.Hide();
                 }
                 else
                 {
+                    //Ef lykilorðið er vitlaust kemur upp mesasgeBox sem lætur vita
                     MessageBox.Show("Rangt lykilorð eða notendanafn");
                 }
             }
             catch (Exception ex)
             {
+                //Ef villa kemur upp birtist messagebox sem segir hvað er að
                 MessageBox.Show(ex.ToString());
             }
         }
 
+        //Þetta hérna passar að allt forritið lokast þegar ýtt er á X
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);

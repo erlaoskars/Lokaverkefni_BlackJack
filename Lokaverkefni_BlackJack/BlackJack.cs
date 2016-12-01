@@ -208,7 +208,14 @@ namespace Lokaverkefni_BlackJack
 
                 }
 
-                if (lokastig > lokastigTolvu && lokastig <= 21)
+                lokastigTolvu = lokastigTolvu + spiltolvu;
+
+                if (stigtolvu == lokastig && stigtolvu <= 21 && lokastig <= 21)
+                {
+                    peningur = bet;
+                    money = money + bet;
+                }
+                else if (lokastig > lokastigTolvu && lokastig <= 21)
                 {
                     peningur = bet * 2;
                     money = money + bet * 2;
@@ -218,18 +225,12 @@ namespace Lokaverkefni_BlackJack
                     peningur = -bet;
                     money = money + bet;
                 }
-                else if (stigtolvu == lokastig && stigtolvu <= 21 && lokastig <= 21)
-                {
-                    peningur = bet;
-                    money = money + bet;
-                }
+                
             }
 
                 btnHit.Hide();
                 btnSignal.Hide();
                 btnStart.Show();
-
-                lokastigTolvu = lokastigTolvu + spiltolvu;
 
                 gagni.SettInnMoney(nafn, money);
                 lblMoney.Text = money.ToString() + "$";
