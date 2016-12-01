@@ -20,10 +20,20 @@ namespace Lokaverkefni_BlackJack
         public Leikslok(int stigPlayer, int stigTalva, int peningur)
         {
             InitializeComponent();
-
-            stigP1 = stigPlayer;
-            stigT1 = stigTalva;
-            tapedawin = peningur;
+            if (stigP1 == 21)
+            {
+                lblCpupoints.Text = "BLACKJACK 21!";
+            }
+            if (stigT1 == 21)
+            {
+                lblPlayerpoints.Text = "BLACKJACK 21!";
+            }
+            else
+            {
+                stigP1 = stigPlayer;
+                stigT1 = stigTalva;
+                tapedawin = peningur;
+            }
         }
 
         private void Leikslok_Load(object sender, EventArgs e)

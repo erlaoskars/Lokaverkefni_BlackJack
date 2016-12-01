@@ -80,6 +80,8 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Cyan;
+            this.menuStrip1.BackgroundImage = global::Lokaverkefni_BlackJack.Properties.Resources.BlackJackBorð;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
             this.instructionsToolStripMenuItem});
@@ -91,10 +93,12 @@
             // 
             // menuToolStripMenuItem
             // 
+            this.menuToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlText;
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mAuthors,
             this.mLogOut,
             this.mExit});
+            this.menuToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
@@ -122,13 +126,16 @@
             // 
             // instructionsToolStripMenuItem
             // 
+            this.instructionsToolStripMenuItem.BackColor = System.Drawing.Color.Black;
             this.instructionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mInstructionsIS,
             this.mInstructionsENG,
             this.mInstructionsES});
+            this.instructionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.instructionsToolStripMenuItem.Name = "instructionsToolStripMenuItem";
             this.instructionsToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.instructionsToolStripMenuItem.Text = "Instructions";
+            this.instructionsToolStripMenuItem.Click += new System.EventHandler(this.instructionsToolStripMenuItem_Click);
             // 
             // mInstructionsIS
             // 
@@ -153,7 +160,7 @@
             // 
             // btnSignal
             // 
-            this.btnSignal.Location = new System.Drawing.Point(626, 453);
+            this.btnSignal.Location = new System.Drawing.Point(636, 460);
             this.btnSignal.Name = "btnSignal";
             this.btnSignal.Size = new System.Drawing.Size(130, 37);
             this.btnSignal.TabIndex = 3;
@@ -174,7 +181,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(469, 46);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(469, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 5;
@@ -183,7 +192,7 @@
             // lblMoney
             // 
             this.lblMoney.BackColor = System.Drawing.Color.White;
-            this.lblMoney.Location = new System.Drawing.Point(702, 40);
+            this.lblMoney.Location = new System.Drawing.Point(697, 41);
             this.lblMoney.Name = "lblMoney";
             this.lblMoney.Size = new System.Drawing.Size(50, 24);
             this.lblMoney.TabIndex = 6;
@@ -201,7 +210,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(482, 411);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(469, 406);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 9;
@@ -210,7 +221,7 @@
             // lblStig
             // 
             this.lblStig.BackColor = System.Drawing.Color.White;
-            this.lblStig.Location = new System.Drawing.Point(520, 405);
+            this.lblStig.Location = new System.Drawing.Point(507, 400);
             this.lblStig.Name = "lblStig";
             this.lblStig.Size = new System.Drawing.Size(64, 24);
             this.lblStig.TabIndex = 10;
@@ -218,36 +229,44 @@
             // 
             // gbBet
             // 
+            this.gbBet.BackColor = System.Drawing.Color.Transparent;
             this.gbBet.Controls.Add(this.tbBet);
             this.gbBet.Controls.Add(this.btnStart);
-            this.gbBet.Location = new System.Drawing.Point(555, 186);
+            this.gbBet.ForeColor = System.Drawing.Color.White;
+            this.gbBet.Location = new System.Drawing.Point(541, 167);
             this.gbBet.Name = "gbBet";
-            this.gbBet.Size = new System.Drawing.Size(136, 125);
+            this.gbBet.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gbBet.Size = new System.Drawing.Size(141, 145);
             this.gbBet.TabIndex = 17;
             this.gbBet.TabStop = false;
             this.gbBet.Text = "Bet:";
             // 
             // tbBet
             // 
-            this.tbBet.Location = new System.Drawing.Point(12, 38);
+            this.tbBet.Location = new System.Drawing.Point(6, 29);
             this.tbBet.Name = "tbBet";
-            this.tbBet.Size = new System.Drawing.Size(118, 20);
+            this.tbBet.Size = new System.Drawing.Size(129, 20);
             this.tbBet.TabIndex = 18;
+            this.tbBet.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(26, 86);
+            this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnStart.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnStart.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnStart.Location = new System.Drawing.Point(6, 67);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(86, 23);
+            this.btnStart.Size = new System.Drawing.Size(129, 58);
             this.btnStart.TabIndex = 17;
             this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // lblstigtolvu
             // 
             this.lblstigtolvu.BackColor = System.Drawing.Color.White;
-            this.lblstigtolvu.Location = new System.Drawing.Point(697, 405);
+            this.lblstigtolvu.Location = new System.Drawing.Point(697, 400);
             this.lblstigtolvu.Name = "lblstigtolvu";
             this.lblstigtolvu.Size = new System.Drawing.Size(55, 24);
             this.lblstigtolvu.TabIndex = 23;
@@ -256,7 +275,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(633, 411);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(633, 406);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 24;
@@ -264,7 +285,7 @@
             // 
             // btnHit
             // 
-            this.btnHit.Location = new System.Drawing.Point(472, 453);
+            this.btnHit.Location = new System.Drawing.Point(458, 460);
             this.btnHit.Name = "btnHit";
             this.btnHit.Size = new System.Drawing.Size(129, 37);
             this.btnHit.TabIndex = 25;
@@ -400,12 +421,12 @@
             this.BackgroundImage = global::Lokaverkefni_BlackJack.Properties.Resources.BlackJackBorð;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1225, 537);
+            this.ControlBox = false;
             this.Controls.Add(this.pbtolvuspil1);
             this.Controls.Add(this.pbtolvuspil2);
             this.Controls.Add(this.pbtolvuspil3);
             this.Controls.Add(this.pbtolvuspil4);
             this.Controls.Add(this.pbtolvuspil5);
-            this.Controls.Add(this.pbtolvuspil6);
             this.Controls.Add(this.btnHit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblstigtolvu);
@@ -424,6 +445,8 @@
             this.Controls.Add(this.pbspil4);
             this.Controls.Add(this.pbspil5);
             this.Controls.Add(this.pbspil6);
+            this.Controls.Add(this.pbtolvuspil6);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "BlackJack";
             this.Text = "BlackJack";
