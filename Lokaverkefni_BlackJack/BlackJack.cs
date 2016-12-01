@@ -14,6 +14,7 @@ namespace Lokaverkefni_BlackJack
     {
         //Breytur fyrir Notanda
         int stig = 0;
+        int round = 1;
         int spil = 0; //Fundið gildispil og hefur gildi spil einnig.
         int tigulspadilaufas = 0; //Fundið Tegund spils
         string stafurspils = "";
@@ -31,6 +32,7 @@ namespace Lokaverkefni_BlackJack
         //Breytur fyrir A.I Andstæðing.
         int spiltolvu = 0;
         int stigtolvu = 0;
+        int roundtolvu = 0;
         string gildispilstolvu = "";
         string validspiltolvu = "";
         string stafurspiltolvu = "";
@@ -61,7 +63,6 @@ namespace Lokaverkefni_BlackJack
         Adferdir aðferðir = new Adferdir();
         Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
         Random rnd = new Random();
-        int round = 1;
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
@@ -150,6 +151,8 @@ namespace Lokaverkefni_BlackJack
                     round = 1;
                     pbSpil.Image = null; pbspil2.Image = null; pbspil3.Image = null;
                     pbspil4.Image = null; pbspil5.Image = null; pbspil6.Image = null;
+                    pbtolvuspil1.Image = null; pbtolvuspil2.Image = null; pbtolvuspil3.Image = null;
+                    pbtolvuspil4.Image = null; pbtolvuspil5.Image = null; pbtolvuspil6.Image = null;
                 }
             }
         }
@@ -204,7 +207,7 @@ namespace Lokaverkefni_BlackJack
             gildispils = spil.ToString();
             validspil = (gildispils + stafurspils).ToString(); //sett saman Value og staf svo hægt sé að birta 
 
-            if (spiltolvu > 14 && spiltolvu < 21 && round >= 1 && win == false)
+            if (spiltolvu > 4 && round >= 1 && win == false)
             {
                 
             }
@@ -217,7 +220,35 @@ namespace Lokaverkefni_BlackJack
                 lblstigtolvu.Text = stigtolvu.ToString(); // test label
                 gildispils = spil.ToString();
                 validspiltolvu = (gildispilstolvu + stafurspiltolvu).ToString();
+                roundtolvu++;
+
+                if (roundtolvu == 1)
+                {
+                    pbtolvuspil1.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+                }
+                if (roundtolvu == 2)
+                {
+                    pbtolvuspil2.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+                }
+                if (roundtolvu == 3)
+                {
+                    pbtolvuspil3.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+                }
+                if (roundtolvu == 4)
+                {
+                    pbtolvuspil4.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+                }
+                if (roundtolvu == 5)
+                {
+                    pbtolvuspil5.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+                }
+                if (roundtolvu == 6)
+                {
+                    pbtolvuspil6.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+                }
             }
+
+            //PictureBox Notanda
             if (round == 1)
             {
                 pbSpil.Image = (Image)Properties.Resources.ResourceManager.GetObject(validspil);
