@@ -33,6 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblMoneygol = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblPlayerpoints
@@ -87,11 +88,21 @@
             this.lblMoneygol.Text = "Money gained or lost";
             this.lblMoneygol.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(158, 105);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Money gained or lost";
+            // 
             // Leikslok
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(428, 192);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMoneygol);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -112,5 +123,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblMoneygol;
+        private System.Windows.Forms.Label label1;
     }
 }

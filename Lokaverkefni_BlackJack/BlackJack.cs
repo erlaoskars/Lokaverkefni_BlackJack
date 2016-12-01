@@ -164,7 +164,31 @@ namespace Lokaverkefni_BlackJack
         {
             lokastig = stig;
             lokastigTolvu = stigtolvu;
-            peningur = bet;
+
+            if (lokastig > lokastigTolvu)
+            {
+                peningur = bet * 2;
+            }
+            if (lokastig < lokastigTolvu)
+            {
+                peningur = -bet;
+            }
+            if (stigtolvu == stig)
+            {
+                btnHit.Hide();
+                btnSignal.Hide();
+                btnStart.Show();
+                money = money + bet;
+                gagni.SettInnMoney(nafn, money);
+                lblMoney.Text = money.ToString() + "$";
+                lokastig = stig;
+                lokastigTolvu = stigtolvu;
+                peningur = bet;
+            }
+
+            btnHit.Hide();
+            btnSignal.Hide();
+            btnStart.Show();
 
             Leikslok leikslok = new Leikslok(lokastig,lokastigTolvu,peningur);
             leikslok.Show();
@@ -180,7 +204,7 @@ namespace Lokaverkefni_BlackJack
             gildispils = spil.ToString();
             validspil = (gildispils + stafurspils).ToString(); //sett saman Value og staf svo hægt sé að birta 
 
-            if (spiltolvu > 14 && round >= 1 && win == false)
+            if (spiltolvu > 14 && spiltolvu < 21 && round >= 1 && win == false)
             {
                 
             }
@@ -233,12 +257,12 @@ namespace Lokaverkefni_BlackJack
                 btnHit.Hide();
                 btnSignal.Hide();
                 btnStart.Show();
-                money = money + bet;
+                money = money + 0;
                 gagni.SettInnMoney(nafn, money);
                 lblMoney.Text = money.ToString() + "$";
                 lokastig = stig;
                 lokastigTolvu = stigtolvu;
-                peningur = bet;
+                peningur = 0;
 
                 Leikslok leikslok = new Leikslok(lokastig, lokastigTolvu, peningur);
                 leikslok.Show();
@@ -254,13 +278,12 @@ namespace Lokaverkefni_BlackJack
                 lblMoney.Text = money.ToString() + "$";
                 lokastig = stig;
                 lokastigTolvu = stigtolvu;
-                peningur = bet;
+                peningur = -bet;
                 win = true;
 
                 Leikslok leikslok = new Leikslok(lokastig, lokastigTolvu, peningur);
                 leikslok.Show();
             }
-
             else if (stigtolvu > 21)
             {
                 MessageBox.Show("CPU Busted");
@@ -272,7 +295,7 @@ namespace Lokaverkefni_BlackJack
                 lblMoney.Text = money.ToString() + "$";
                 lokastig = stig;
                 lokastigTolvu = stigtolvu;
-                peningur = bet;
+                peningur = (bet * 2);
                 win = false;
                                            
                 Leikslok leikslok = new Leikslok(lokastig, lokastigTolvu, peningur);
