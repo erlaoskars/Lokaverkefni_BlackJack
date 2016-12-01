@@ -43,7 +43,7 @@ namespace Lokaverkefni_BlackJack
             }
         }
 
-        private bool CloseConnection()
+        public bool CloseConnection()
         {
             try
             {

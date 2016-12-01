@@ -118,68 +118,68 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="1A" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\1A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1A1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\1A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\1B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\1C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\1D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2A" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\2A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\2B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\2C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3A" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\3A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\3B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\3C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\3D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4A" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\4A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="4B" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Spil\4B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\4C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="11A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\11A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\9B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Spil\4D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5A" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\5A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="10B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\10B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\5B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="7B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\7B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\5C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="8B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\8B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spilabak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spilabak.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\2B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\8D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\1A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\3D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\6D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\9A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Spil\5D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\12C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\4A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\9D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="13D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\13D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1A1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\1A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\4C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="6A" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Spil\6A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,83 +187,26 @@
   <data name="6B" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Spil\6B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\6C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="11B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\11B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\6D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="7A" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\7A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="7B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\7B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="7C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\7C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="7D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\7D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8A" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\8A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\8B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\8C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\8D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="9A" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\9A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="9B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\9B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="9C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\9C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="9D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\9D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="10A" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\10A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="10B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\10B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="10C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\10C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="5A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\5A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="10D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Spil\10D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="11A" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\11A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="11B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\11B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="11C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\11C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="11D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\11D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="12A" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\12A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="8C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\8C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="12B" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Spil\12B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="12C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\12C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\2C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="12D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\12D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="11C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\11C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="13A" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Spil\13A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,10 +214,73 @@
   <data name="13B" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Spil\13B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="5B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\5B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\7D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\3C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\10A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\2A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\12D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\1D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\1B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\6C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\1C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\9C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\5C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\7A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\8A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="13C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Spil\13C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="13D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Spil\13D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\3B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\11D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\7C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\12A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\3A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Spil\10C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlackJackBorð" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\BlackJackBorð.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

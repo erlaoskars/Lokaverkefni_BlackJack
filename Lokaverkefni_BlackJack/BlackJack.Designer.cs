@@ -49,15 +49,27 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.lblstigtolvu = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnHit = new System.Windows.Forms.Button();
+            this.pbtolvuspil1 = new System.Windows.Forms.PictureBox();
+            this.pbtolvuspil2 = new System.Windows.Forms.PictureBox();
+            this.pbtolvuspil3 = new System.Windows.Forms.PictureBox();
+            this.pbtolvuspil4 = new System.Windows.Forms.PictureBox();
+            this.pbtolvuspil5 = new System.Windows.Forms.PictureBox();
+            this.pbtolvuspil6 = new System.Windows.Forms.PictureBox();
             this.pbSpil = new System.Windows.Forms.PictureBox();
             this.pbspil2 = new System.Windows.Forms.PictureBox();
             this.pbspil3 = new System.Windows.Forms.PictureBox();
             this.pbspil4 = new System.Windows.Forms.PictureBox();
             this.pbspil5 = new System.Windows.Forms.PictureBox();
             this.pbspil6 = new System.Windows.Forms.PictureBox();
-            this.btnHit = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.gbBet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbtolvuspil1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbtolvuspil2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbtolvuspil3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbtolvuspil4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbtolvuspil5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbtolvuspil6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSpil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbspil2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbspil3)).BeginInit();
@@ -73,7 +85,7 @@
             this.instructionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1155, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1225, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -141,7 +153,7 @@
             // 
             // btnSignal
             // 
-            this.btnSignal.Location = new System.Drawing.Point(184, 451);
+            this.btnSignal.Location = new System.Drawing.Point(626, 453);
             this.btnSignal.Name = "btnSignal";
             this.btnSignal.Size = new System.Drawing.Size(130, 37);
             this.btnSignal.TabIndex = 3;
@@ -153,7 +165,7 @@
             // lblNafn
             // 
             this.lblNafn.BackColor = System.Drawing.Color.Snow;
-            this.lblNafn.Location = new System.Drawing.Point(69, 51);
+            this.lblNafn.Location = new System.Drawing.Point(507, 41);
             this.lblNafn.Name = "lblNafn";
             this.lblNafn.Size = new System.Drawing.Size(189, 24);
             this.lblNafn.TabIndex = 4;
@@ -162,7 +174,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 56);
+            this.label1.Location = new System.Drawing.Point(469, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 5;
@@ -171,7 +183,7 @@
             // lblMoney
             // 
             this.lblMoney.BackColor = System.Drawing.Color.White;
-            this.lblMoney.Location = new System.Drawing.Point(264, 50);
+            this.lblMoney.Location = new System.Drawing.Point(702, 40);
             this.lblMoney.Name = "lblMoney";
             this.lblMoney.Size = new System.Drawing.Size(50, 24);
             this.lblMoney.TabIndex = 6;
@@ -189,7 +201,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 409);
+            this.label2.Location = new System.Drawing.Point(482, 411);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 9;
@@ -198,9 +210,9 @@
             // lblStig
             // 
             this.lblStig.BackColor = System.Drawing.Color.White;
-            this.lblStig.Location = new System.Drawing.Point(79, 403);
+            this.lblStig.Location = new System.Drawing.Point(520, 405);
             this.lblStig.Name = "lblStig";
-            this.lblStig.Size = new System.Drawing.Size(55, 24);
+            this.lblStig.Size = new System.Drawing.Size(64, 24);
             this.lblStig.TabIndex = 10;
             this.lblStig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -208,7 +220,7 @@
             // 
             this.gbBet.Controls.Add(this.tbBet);
             this.gbBet.Controls.Add(this.btnStart);
-            this.gbBet.Location = new System.Drawing.Point(517, 186);
+            this.gbBet.Location = new System.Drawing.Point(555, 186);
             this.gbBet.Name = "gbBet";
             this.gbBet.Size = new System.Drawing.Size(136, 125);
             this.gbBet.TabIndex = 17;
@@ -235,7 +247,7 @@
             // lblstigtolvu
             // 
             this.lblstigtolvu.BackColor = System.Drawing.Color.White;
-            this.lblstigtolvu.Location = new System.Drawing.Point(246, 403);
+            this.lblstigtolvu.Location = new System.Drawing.Point(697, 405);
             this.lblstigtolvu.Name = "lblstigtolvu";
             this.lblstigtolvu.Size = new System.Drawing.Size(55, 24);
             this.lblstigtolvu.TabIndex = 23;
@@ -244,14 +256,86 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(182, 409);
+            this.label4.Location = new System.Drawing.Point(633, 411);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 24;
             this.label4.Text = "Stig Tölvu:";
             // 
+            // btnHit
+            // 
+            this.btnHit.Location = new System.Drawing.Point(472, 453);
+            this.btnHit.Name = "btnHit";
+            this.btnHit.Size = new System.Drawing.Size(129, 37);
+            this.btnHit.TabIndex = 25;
+            this.btnHit.Text = "Hit";
+            this.btnHit.UseVisualStyleBackColor = true;
+            this.btnHit.Visible = false;
+            this.btnHit.Click += new System.EventHandler(this.btnHit_Click);
+            // 
+            // pbtolvuspil1
+            // 
+            this.pbtolvuspil1.BackColor = System.Drawing.Color.Transparent;
+            this.pbtolvuspil1.Location = new System.Drawing.Point(1024, 105);
+            this.pbtolvuspil1.Name = "pbtolvuspil1";
+            this.pbtolvuspil1.Size = new System.Drawing.Size(189, 276);
+            this.pbtolvuspil1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbtolvuspil1.TabIndex = 26;
+            this.pbtolvuspil1.TabStop = false;
+            // 
+            // pbtolvuspil2
+            // 
+            this.pbtolvuspil2.BackColor = System.Drawing.Color.Transparent;
+            this.pbtolvuspil2.Location = new System.Drawing.Point(975, 105);
+            this.pbtolvuspil2.Name = "pbtolvuspil2";
+            this.pbtolvuspil2.Size = new System.Drawing.Size(189, 276);
+            this.pbtolvuspil2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbtolvuspil2.TabIndex = 29;
+            this.pbtolvuspil2.TabStop = false;
+            // 
+            // pbtolvuspil3
+            // 
+            this.pbtolvuspil3.BackColor = System.Drawing.Color.Transparent;
+            this.pbtolvuspil3.Location = new System.Drawing.Point(921, 105);
+            this.pbtolvuspil3.Name = "pbtolvuspil3";
+            this.pbtolvuspil3.Size = new System.Drawing.Size(189, 276);
+            this.pbtolvuspil3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbtolvuspil3.TabIndex = 27;
+            this.pbtolvuspil3.TabStop = false;
+            // 
+            // pbtolvuspil4
+            // 
+            this.pbtolvuspil4.BackColor = System.Drawing.Color.Transparent;
+            this.pbtolvuspil4.Location = new System.Drawing.Point(877, 105);
+            this.pbtolvuspil4.Name = "pbtolvuspil4";
+            this.pbtolvuspil4.Size = new System.Drawing.Size(189, 276);
+            this.pbtolvuspil4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbtolvuspil4.TabIndex = 28;
+            this.pbtolvuspil4.TabStop = false;
+            // 
+            // pbtolvuspil5
+            // 
+            this.pbtolvuspil5.BackColor = System.Drawing.Color.Transparent;
+            this.pbtolvuspil5.Location = new System.Drawing.Point(829, 105);
+            this.pbtolvuspil5.Name = "pbtolvuspil5";
+            this.pbtolvuspil5.Size = new System.Drawing.Size(189, 276);
+            this.pbtolvuspil5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbtolvuspil5.TabIndex = 30;
+            this.pbtolvuspil5.TabStop = false;
+            // 
+            // pbtolvuspil6
+            // 
+            this.pbtolvuspil6.BackColor = System.Drawing.Color.Transparent;
+            this.pbtolvuspil6.Location = new System.Drawing.Point(780, 105);
+            this.pbtolvuspil6.Name = "pbtolvuspil6";
+            this.pbtolvuspil6.Size = new System.Drawing.Size(189, 276);
+            this.pbtolvuspil6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbtolvuspil6.TabIndex = 31;
+            this.pbtolvuspil6.TabStop = false;
+            // 
             // pbSpil
             // 
+            this.pbSpil.BackColor = System.Drawing.Color.Transparent;
             this.pbSpil.Location = new System.Drawing.Point(17, 105);
             this.pbSpil.Name = "pbSpil";
             this.pbSpil.Size = new System.Drawing.Size(189, 276);
@@ -261,6 +345,7 @@
             // 
             // pbspil2
             // 
+            this.pbspil2.BackColor = System.Drawing.Color.Transparent;
             this.pbspil2.Location = new System.Drawing.Point(72, 105);
             this.pbspil2.Name = "pbspil2";
             this.pbspil2.Size = new System.Drawing.Size(189, 276);
@@ -270,6 +355,7 @@
             // 
             // pbspil3
             // 
+            this.pbspil3.BackColor = System.Drawing.Color.Transparent;
             this.pbspil3.Location = new System.Drawing.Point(124, 105);
             this.pbspil3.Name = "pbspil3";
             this.pbspil3.Size = new System.Drawing.Size(189, 276);
@@ -279,6 +365,7 @@
             // 
             // pbspil4
             // 
+            this.pbspil4.BackColor = System.Drawing.Color.Transparent;
             this.pbspil4.Location = new System.Drawing.Point(178, 105);
             this.pbspil4.Name = "pbspil4";
             this.pbspil4.Size = new System.Drawing.Size(189, 276);
@@ -288,6 +375,7 @@
             // 
             // pbspil5
             // 
+            this.pbspil5.BackColor = System.Drawing.Color.Transparent;
             this.pbspil5.Location = new System.Drawing.Point(229, 105);
             this.pbspil5.Name = "pbspil5";
             this.pbspil5.Size = new System.Drawing.Size(189, 276);
@@ -297,6 +385,7 @@
             // 
             // pbspil6
             // 
+            this.pbspil6.BackColor = System.Drawing.Color.Transparent;
             this.pbspil6.Location = new System.Drawing.Point(278, 105);
             this.pbspil6.Name = "pbspil6";
             this.pbspil6.Size = new System.Drawing.Size(189, 276);
@@ -304,22 +393,19 @@
             this.pbspil6.TabIndex = 22;
             this.pbspil6.TabStop = false;
             // 
-            // btnHit
-            // 
-            this.btnHit.Location = new System.Drawing.Point(34, 451);
-            this.btnHit.Name = "btnHit";
-            this.btnHit.Size = new System.Drawing.Size(129, 37);
-            this.btnHit.TabIndex = 25;
-            this.btnHit.Text = "Hit";
-            this.btnHit.UseVisualStyleBackColor = true;
-            this.btnHit.Visible = false;
-            this.btnHit.Click += new System.EventHandler(this.btnHit_Click);
-            // 
             // BlackJack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1155, 537);
+            this.BackgroundImage = global::Lokaverkefni_BlackJack.Properties.Resources.BlackJackBorð;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1225, 537);
+            this.Controls.Add(this.pbtolvuspil1);
+            this.Controls.Add(this.pbtolvuspil2);
+            this.Controls.Add(this.pbtolvuspil3);
+            this.Controls.Add(this.pbtolvuspil4);
+            this.Controls.Add(this.pbtolvuspil5);
+            this.Controls.Add(this.pbtolvuspil6);
             this.Controls.Add(this.btnHit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblstigtolvu);
@@ -346,6 +432,12 @@
             this.menuStrip1.PerformLayout();
             this.gbBet.ResumeLayout(false);
             this.gbBet.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbtolvuspil1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbtolvuspil2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbtolvuspil3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbtolvuspil4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbtolvuspil5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbtolvuspil6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSpil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbspil2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbspil3)).EndInit();
@@ -387,5 +479,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbBet;
         private System.Windows.Forms.Button btnHit;
+        private System.Windows.Forms.PictureBox pbtolvuspil1;
+        private System.Windows.Forms.PictureBox pbtolvuspil2;
+        private System.Windows.Forms.PictureBox pbtolvuspil3;
+        private System.Windows.Forms.PictureBox pbtolvuspil4;
+        private System.Windows.Forms.PictureBox pbtolvuspil5;
+        private System.Windows.Forms.PictureBox pbtolvuspil6;
     }
 }

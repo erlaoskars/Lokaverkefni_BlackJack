@@ -94,9 +94,10 @@ namespace Lokaverkefni_BlackJack
                     gagnagrunnur.SettInnSqlToflu(nafn, lykilord);
                     MessageBox.Show("Þetta tókst");
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    MessageBox.Show("Notendanafn þegar í notkun" + ex);
+                    gagnagrunnur.CloseConnection();
+                    MessageBox.Show("Notendanafn þegar í notkun");
                 }
             }
         }
