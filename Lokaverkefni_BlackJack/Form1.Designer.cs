@@ -39,38 +39,44 @@
             // Label2
             // 
             this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(34, 51);
+            this.Label2.BackColor = System.Drawing.Color.Transparent;
+            this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label2.ForeColor = System.Drawing.Color.White;
+            this.Label2.Location = new System.Drawing.Point(242, 101);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(56, 13);
+            this.Label2.Size = new System.Drawing.Size(71, 16);
             this.Label2.TabIndex = 11;
             this.Label2.Text = "Password:";
             // 
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(34, 25);
+            this.Label1.BackColor = System.Drawing.Color.Transparent;
+            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label1.ForeColor = System.Drawing.Color.White;
+            this.Label1.Location = new System.Drawing.Point(242, 74);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(58, 13);
+            this.Label1.Size = new System.Drawing.Size(74, 16);
             this.Label1.TabIndex = 10;
             this.Label1.Text = "Username:";
             // 
             // tbLykilord
             // 
-            this.tbLykilord.Location = new System.Drawing.Point(146, 48);
+            this.tbLykilord.Location = new System.Drawing.Point(354, 100);
             this.tbLykilord.Name = "tbLykilord";
             this.tbLykilord.Size = new System.Drawing.Size(206, 20);
             this.tbLykilord.TabIndex = 9;
             // 
             // tbNotendanafn
             // 
-            this.tbNotendanafn.Location = new System.Drawing.Point(146, 22);
+            this.tbNotendanafn.Location = new System.Drawing.Point(354, 74);
             this.tbNotendanafn.Name = "tbNotendanafn";
             this.tbNotendanafn.Size = new System.Drawing.Size(206, 20);
             this.tbNotendanafn.TabIndex = 8;
             // 
             // btnSkraInn
             // 
-            this.btnSkraInn.Location = new System.Drawing.Point(205, 109);
+            this.btnSkraInn.Location = new System.Drawing.Point(413, 161);
             this.btnSkraInn.Name = "btnSkraInn";
             this.btnSkraInn.Size = new System.Drawing.Size(147, 42);
             this.btnSkraInn.TabIndex = 7;
@@ -80,7 +86,7 @@
             // 
             // btnNyskra
             // 
-            this.btnNyskra.Location = new System.Drawing.Point(31, 109);
+            this.btnNyskra.Location = new System.Drawing.Point(239, 161);
             this.btnNyskra.Name = "btnNyskra";
             this.btnNyskra.Size = new System.Drawing.Size(147, 42);
             this.btnNyskra.TabIndex = 6;
@@ -93,7 +99,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(383, 167);
+            this.BackgroundImage = global::Lokaverkefni_BlackJack.Properties.Resources.vegas;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(594, 269);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.tbLykilord);

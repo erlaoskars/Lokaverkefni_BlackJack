@@ -207,17 +207,21 @@ namespace Lokaverkefni_BlackJack
                     pbtolvuspil6.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
 
                 }
-                if (lokastig > lokastigTolvu)
+
+                if (lokastig > lokastigTolvu && lokastig <= 21)
                 {
                     peningur = bet * 2;
+                    money = money + bet * 2;
                 }
-                else if (lokastig < lokastigTolvu)
+                else if (lokastig < lokastigTolvu && lokastigTolvu <= 21)
                 {
                     peningur = -bet;
+                    money = money + bet;
                 }
-                else if (stigtolvu == stig)
+                else if (stigtolvu == lokastig && stigtolvu <= 21 && lokastig <= 21)
                 {
                     peningur = bet;
+                    money = money + bet;
                 }
             }
 
@@ -226,6 +230,10 @@ namespace Lokaverkefni_BlackJack
                 btnStart.Show();
 
                 lokastigTolvu = lokastigTolvu + spiltolvu;
+
+                gagni.SettInnMoney(nafn, money);
+                lblMoney.Text = money.ToString() + "$";
+
                 Leikslok leikslok = new Leikslok(lokastig, lokastigTolvu, peningur);
                 leikslok.Show();
        
