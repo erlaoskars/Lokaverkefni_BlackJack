@@ -15,7 +15,7 @@ namespace Lokaverkefni_BlackJack
 
         int stigP1 = 0;
         int stigT1 = 0;
-        int tapeðawin = 0;
+        int tapedawin = 0;
 
         public Leikslok(int stigPlayer, int stigTalva, int peningur)
         {
@@ -23,14 +23,14 @@ namespace Lokaverkefni_BlackJack
 
             stigP1 = stigPlayer;
             stigT1 = stigTalva;
-            tapeðawin = peningur;
+            tapedawin = peningur;
         }
 
         private void Leikslok_Load(object sender, EventArgs e)
         {
             lblPlayerpoints.Text = stigP1.ToString();
             lblCpupoints.Text = stigT1.ToString();
-            lblMoneygol.Text = tapeðawin.ToString();
+            lblMoneygol.Text = tapedawin.ToString();
 
         }
     }
