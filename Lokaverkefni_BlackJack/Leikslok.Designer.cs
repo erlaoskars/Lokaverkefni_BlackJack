@@ -39,7 +39,8 @@
             // lblPlayerpoints
             // 
             this.lblPlayerpoints.AutoSize = true;
-            this.lblPlayerpoints.BackColor = System.Drawing.Color.Silver;
+            this.lblPlayerpoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblPlayerpoints.ForeColor = System.Drawing.Color.Cyan;
             this.lblPlayerpoints.Location = new System.Drawing.Point(140, 76);
             this.lblPlayerpoints.Name = "lblPlayerpoints";
             this.lblPlayerpoints.Size = new System.Drawing.Size(35, 13);
@@ -50,7 +51,8 @@
             // lblCpupoints
             // 
             this.lblCpupoints.AutoSize = true;
-            this.lblCpupoints.BackColor = System.Drawing.Color.Silver;
+            this.lblCpupoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblCpupoints.ForeColor = System.Drawing.Color.Cyan;
             this.lblCpupoints.Location = new System.Drawing.Point(246, 76);
             this.lblCpupoints.Name = "lblCpupoints";
             this.lblCpupoints.Size = new System.Drawing.Size(35, 13);
@@ -61,7 +63,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Silver;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.Cyan;
             this.label3.Location = new System.Drawing.Point(246, 42);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
@@ -71,7 +74,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Silver;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.Cyan;
             this.label4.Location = new System.Drawing.Point(114, 42);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 13);
@@ -101,6 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Lokaverkefni_BlackJack.Properties.Resources.BlackJackBorð;
             this.ClientSize = new System.Drawing.Size(428, 192);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMoneygol);

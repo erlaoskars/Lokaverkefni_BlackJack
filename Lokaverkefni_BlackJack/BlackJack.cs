@@ -13,6 +13,7 @@ namespace Lokaverkefni_BlackJack
     public partial class BlackJack : Form
     {
         //Breytur fyrir Notanda
+        string instr = "";
         int stig = 0;
         int round = 1;
         int spil = 0; //Fundið gildispil og hefur gildi spil einnig.
@@ -73,21 +74,18 @@ namespace Lokaverkefni_BlackJack
 
         private void mInstructionsIS_Click(object sender, EventArgs e)
         {
-            string instr = ""; 
             instr = adferd.instrIS(instr); 
             MessageBox.Show(instr);
         }
         
         private void mInstructionsENG_Click(object sender, EventArgs e)
         {
-            string instr = "";
             instr = adferd.instrEN(instr);
             MessageBox.Show(instr);   
         }
 
         private void mInstructionsES_Click(object sender, EventArgs e)
         {
-            string instr = "";
             instr = adferd.instrES(instr);
             MessageBox.Show(instr);
         }
@@ -149,6 +147,7 @@ namespace Lokaverkefni_BlackJack
                     btnStart.Hide();
 
                     round = 1;
+                    roundtolvu = 0;
                     pbSpil.Image = null; pbspil2.Image = null; pbspil3.Image = null;
                     pbspil4.Image = null; pbspil5.Image = null; pbspil6.Image = null;
                     pbtolvuspil1.Image = null; pbtolvuspil2.Image = null; pbtolvuspil3.Image = null;
@@ -167,34 +166,78 @@ namespace Lokaverkefni_BlackJack
         {
             lokastig = stig;
             lokastigTolvu = stigtolvu;
+            spiltolvu = rnd.Next(1, 101);
+            if (stigtolvu > 17 || stigtolvu == 21 || stigtolvu < 99) //A.I Tekur ákvörðun hvort hún ætti að "hitta" einsusinni en
+            {
 
-            if (lokastig > lokastigTolvu)
-            {
-                peningur = bet * 2;
             }
-            if (lokastig < lokastigTolvu)
+            else if (stigtolvu < 17 || spiltolvu < 13)
             {
-                peningur = -bet;
+                spiltolvu = rnd.Next(1, 14);
+                tigulspadilaufas = rnd.Next(1, 5);
+                stafurspiltolvu = adferd.randomstafur(stafurspiltolvu);
+                stigtolvu = stigtolvu + spiltolvu; //stigin útreiknuð fyrir tolvu
+                lblstigtolvu.Text = stigtolvu.ToString(); // test label
+                gildispils = spil.ToString();
+                validspiltolvu = (gildispilstolvu + stafurspiltolvu).ToString();
+                roundtolvu++;
+                if (roundtolvu == 1)
+                {
+                    pbtolvuspil1.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+                }
+                else if(roundtolvu == 2)
+                {
+                    pbtolvuspil2.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+                }
+                else if (roundtolvu == 3)
+                {
+                    pbtolvuspil3.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+                }
+                else if (roundtolvu == 4)
+                {
+                    pbtolvuspil4.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+                }
+                else if (roundtolvu == 5)
+                {
+                    pbtolvuspil5.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+                }
+                else
+                {
+                    pbtolvuspil6.Image = Lokaverkefni_BlackJack.Properties.Resources.spilabak;
+
+                }
+                if (lokastig > lokastigTolvu)
+                {
+                    peningur = bet * 2;
+                }
+                else if(lokastig < lokastigTolvu)
+                {
+                    peningur = -bet;
+                }
+                else if(stigtolvu == stig)
+                {
+                    btnHit.Hide();
+                    btnSignal.Hide();
+                    btnStart.Show();
+                    money = money + bet;
+                    gagni.SettInnMoney(nafn, money);
+                    lblMoney.Text = money.ToString() + "$";
+                    lokastig = stig;
+                    lokastigTolvu = stigtolvu;
+                    peningur = bet;
+                }
             }
-            if (stigtolvu == stig)
-            {
+
                 btnHit.Hide();
                 btnSignal.Hide();
                 btnStart.Show();
-                money = money + bet;
-                gagni.SettInnMoney(nafn, money);
-                lblMoney.Text = money.ToString() + "$";
-                lokastig = stig;
-                lokastigTolvu = stigtolvu;
-                peningur = bet;
-            }
 
-            btnHit.Hide();
-            btnSignal.Hide();
-            btnStart.Show();
 
-            Leikslok leikslok = new Leikslok(lokastig,lokastigTolvu,peningur);
-            leikslok.Show();
+              
+
+                Leikslok leikslok = new Leikslok(lokastig, lokastigTolvu, peningur);
+                leikslok.Show();
+       
         }
 
         private void btnHit_Click(object sender, EventArgs e)
@@ -207,9 +250,13 @@ namespace Lokaverkefni_BlackJack
             gildispils = spil.ToString();
             validspil = (gildispils + stafurspils).ToString(); //sett saman Value og staf svo hægt sé að birta 
 
-            if (spiltolvu > 4 && round >= 1 && win == false)
+            if (stigtolvu > 15 && round >= 1 && win == false)
             {
                 
+            }
+            if (stigtolvu > 19)
+            {
+
             }
             else
             {
@@ -333,6 +380,11 @@ namespace Lokaverkefni_BlackJack
                 leikslok.Show();
             }
            
+        }
+
+        private void instructionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

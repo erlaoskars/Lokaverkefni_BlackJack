@@ -603,6 +603,16 @@ namespace Lokaverkefni_BlackJack.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Graentakki {
+            get {
+                object obj = ResourceManager.GetObject("Graentakki", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap spilabak {
             get {
                 object obj = ResourceManager.GetObject("spilabak", resourceCulture);
