@@ -41,7 +41,7 @@
             this.lblPlayerpoints.AutoSize = true;
             this.lblPlayerpoints.BackColor = System.Drawing.Color.Transparent;
             this.lblPlayerpoints.ForeColor = System.Drawing.Color.Cyan;
-            this.lblPlayerpoints.Location = new System.Drawing.Point(140, 76);
+            this.lblPlayerpoints.Location = new System.Drawing.Point(140, 71);
             this.lblPlayerpoints.Name = "lblPlayerpoints";
             this.lblPlayerpoints.Size = new System.Drawing.Size(35, 13);
             this.lblPlayerpoints.TabIndex = 0;
@@ -53,7 +53,7 @@
             this.lblCpupoints.AutoSize = true;
             this.lblCpupoints.BackColor = System.Drawing.Color.Transparent;
             this.lblCpupoints.ForeColor = System.Drawing.Color.Cyan;
-            this.lblCpupoints.Location = new System.Drawing.Point(246, 76);
+            this.lblCpupoints.Location = new System.Drawing.Point(246, 71);
             this.lblCpupoints.Name = "lblCpupoints";
             this.lblCpupoints.Size = new System.Drawing.Size(35, 13);
             this.lblCpupoints.TabIndex = 1;
@@ -84,7 +84,8 @@
             // 
             // lblMoneygol
             // 
-            this.lblMoneygol.BackColor = System.Drawing.Color.Silver;
+            this.lblMoneygol.BackColor = System.Drawing.Color.Transparent;
+            this.lblMoneygol.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblMoneygol.Location = new System.Drawing.Point(140, 118);
             this.lblMoneygol.Name = "lblMoneygol";
             this.lblMoneygol.Size = new System.Drawing.Size(141, 28);
@@ -94,10 +95,10 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(158, 105);
+            this.label1.BackColor = System.Drawing.Color.Cyan;
+            this.label1.Location = new System.Drawing.Point(158, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 13);
+            this.label1.Size = new System.Drawing.Size(105, 17);
             this.label1.TabIndex = 6;
             this.label1.Text = "Money gained or lost";
             // 

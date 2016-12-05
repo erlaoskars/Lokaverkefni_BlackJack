@@ -47,8 +47,6 @@
             this.gbBet = new System.Windows.Forms.GroupBox();
             this.tbBet = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
-            this.lblstigtolvu = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnHit = new System.Windows.Forms.Button();
             this.pbtolvuspil1 = new System.Windows.Forms.PictureBox();
             this.pbtolvuspil2 = new System.Windows.Forms.PictureBox();
@@ -160,7 +158,7 @@
             // 
             // btnSignal
             // 
-            this.btnSignal.Location = new System.Drawing.Point(636, 460);
+            this.btnSignal.Location = new System.Drawing.Point(630, 460);
             this.btnSignal.Name = "btnSignal";
             this.btnSignal.Size = new System.Drawing.Size(130, 37);
             this.btnSignal.TabIndex = 3;
@@ -212,7 +210,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(469, 406);
+            this.label2.Location = new System.Drawing.Point(53, 447);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 9;
@@ -221,7 +219,7 @@
             // lblStig
             // 
             this.lblStig.BackColor = System.Drawing.Color.White;
-            this.lblStig.Location = new System.Drawing.Point(507, 400);
+            this.lblStig.Location = new System.Drawing.Point(91, 441);
             this.lblStig.Name = "lblStig";
             this.lblStig.Size = new System.Drawing.Size(64, 24);
             this.lblStig.TabIndex = 10;
@@ -233,7 +231,7 @@
             this.gbBet.Controls.Add(this.tbBet);
             this.gbBet.Controls.Add(this.btnStart);
             this.gbBet.ForeColor = System.Drawing.Color.White;
-            this.gbBet.Location = new System.Drawing.Point(541, 167);
+            this.gbBet.Location = new System.Drawing.Point(555, 170);
             this.gbBet.Name = "gbBet";
             this.gbBet.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gbBet.Size = new System.Drawing.Size(141, 145);
@@ -248,6 +246,7 @@
             this.tbBet.Size = new System.Drawing.Size(129, 20);
             this.tbBet.TabIndex = 18;
             this.tbBet.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbBet.TextChanged += new System.EventHandler(this.tbBet_TextChanged);
             // 
             // btnStart
             // 
@@ -263,29 +262,9 @@
             this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // lblstigtolvu
-            // 
-            this.lblstigtolvu.BackColor = System.Drawing.Color.White;
-            this.lblstigtolvu.Location = new System.Drawing.Point(697, 400);
-            this.lblstigtolvu.Name = "lblstigtolvu";
-            this.lblstigtolvu.Size = new System.Drawing.Size(55, 24);
-            this.lblstigtolvu.TabIndex = 23;
-            this.lblstigtolvu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(633, 406);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Stig Tölvu:";
-            // 
             // btnHit
             // 
-            this.btnHit.Location = new System.Drawing.Point(458, 460);
+            this.btnHit.Location = new System.Drawing.Point(485, 460);
             this.btnHit.Name = "btnHit";
             this.btnHit.Size = new System.Drawing.Size(129, 37);
             this.btnHit.TabIndex = 25;
@@ -428,8 +407,6 @@
             this.Controls.Add(this.pbtolvuspil4);
             this.Controls.Add(this.pbtolvuspil5);
             this.Controls.Add(this.btnHit);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblstigtolvu);
             this.Controls.Add(this.pbSpil);
             this.Controls.Add(this.pbspil2);
             this.Controls.Add(this.pbspil3);
@@ -498,8 +475,6 @@
         private System.Windows.Forms.PictureBox pbspil2;
         private System.Windows.Forms.PictureBox pbspil5;
         private System.Windows.Forms.PictureBox pbspil6;
-        private System.Windows.Forms.Label lblstigtolvu;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbBet;
         private System.Windows.Forms.Button btnHit;
         private System.Windows.Forms.PictureBox pbtolvuspil1;

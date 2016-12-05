@@ -83,3 +83,6 @@ C:\Users\1610972769\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack
 C:\Users\1610972769\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.Leikslok.resources
 C:\Users\1610972769\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.Properties.Resources.resources
 C:\Users\1610972769\Desktop\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.csproj.GenerateResource.Cache
+H:\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\bin\Debug\Lokaverkefni_BlackJack.exe.config
+H:\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.exe
+H:\Lokaverkefni_BlackJack-master\Lokaverkefni_BlackJack\obj\Debug\Lokaverkefni_BlackJack.pdb
